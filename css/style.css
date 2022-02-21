@@ -1,9 +1,9 @@
 /*
 colors used:
-primary color (vivid green): #b9ec7e;
-secondary color (medium green): #5ab36f
-tertiary color (dry green): #6a7b76;
-quaternary color (grey): #cccbcc;
+primary color (vivid green): #B2E774;
+secondary color (medium green): #55AD7D
+tertiary color (dry green): #6A7B76;
+quaternary color (grey): #989899;
 text color (black): #313231;
 background color (light beije): #f7f7f7
 */
@@ -66,7 +66,7 @@ a {
 
 /* visited link */
 a:visited {
-  color: #5AB36F;
+  color: #313231;
   text-decoration: underline;
 }
 
@@ -74,28 +74,28 @@ a:visited {
 a:hover,
 a:focus {
   text-decoration: none;
-  color: #6a7b76;
-  background: #b9ec7e;
+  color: #55AD7D;
+  background: #B2E774;
 }
 
 /* selected link */
 a:active {
-  color: #ffffff;
-  background: #5AB36F;
+  color: #55AD7D;
+  background: #B2E774;
 }
 
 
 /* Buttons */
 
-.button {
-  dislay:inline-block;
+a.button {
+  display:inline-block;
   text-decoration: none;
-  background-color: #b9ec7e;
+  background-color: #B2E774;
   color: #313231;
   font-weight: 600;
-  padding: 15px;
-  border-radius:5px;
-  transition: 0.3s opacity;
+  padding: 14px 24px;
+  border-radius:50px;
+  transition: 0.3s opacity
 }
 
 .button:visited {
@@ -104,33 +104,39 @@ a:active {
 }
 
 .button:hover {
-  color: #ffffff;
+  color: #313231;
   text-decoration: none;
-  background-color: #5ab36f;
+  background-color: #B2E774; opacity: 0.5;
 }
 
 .button:active {
-  color: #ffffff;
+  color: #313231;
   text-decoration: none;
-  background-color: #6a7b76;
+  background-color: #B2E774;
 }
 
 
 .button.contact {
   background-color: transparent;
-  color: #5ab36f;
+  color: #55AD7D;
   text-transform: uppercase;
-  border: 2px solid #5ab36f;
+  border: 2px solid #55AD7D;
+}
+
+.button.contact:visited {
+  background-color: transparent;
+  color: #55AD7D;
+  text-decoration: none;
 }
 
 .button.contact:hover {
-  background-color: #b9ec7e;
-  color: #5ab36f;
+  background-color: #B2E774;
+  color: #55AD7D; opacity:0.7;
 
 }
 
 .button.contact:active {
-  background-color: #6a7b76; opacity:0.5;
-  color: #ffffff;
+  background-color: #B2E774;
+  color: #55AD7D;
   text-decoration: none;
 }
