@@ -26,24 +26,24 @@ h3, h4 {
 
 h1 {
   font-family: 'Source Serif Pro', serif;
-  font-size: 3em;
+  font-size: 2.3em;
   font-weight: 800;
   line-height: 1;
-  margin: 0;
+  margin: 1em 0 0.5em;
 }
 
 h2 {
   font-family: 'Source Serif Pro', serif;
-  font-size: 2.2em;
+  font-size: 2em;
   font-weight: 700;
-  margin: 0 0 0.3em;
+  margin: 1em 0 0.3em;
 }
 
 h3 {
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 1.8em;
+  font-size: 1.6em;
   font-weight: 600;
-  margin: 0 0 0.6em;
+  margin: 1em 0 0.3em;
 }
 
 h4 {
@@ -51,18 +51,17 @@ h4 {
   font-size: 1em;
   font-weight: 700;
   text-transform: uppercase;
-  margin: 2.3em 0 1em;
+  margin: 2.5em 0 1em;
 }
 
 p {
-  margin: 0 0 1em;
+  margin: 0 0 1.5em;
 }
-
 
 .hero h1 span {
   font-size: 55%;
   display: block;
-  margin: 0.5em 0 1em;
+  margin: 0.7em 0 1em;
   font-family: 'Source Sans Pro', sans-serif;
   line-height: 1.2;
   font-weight: 600;
@@ -71,7 +70,7 @@ p {
 /* pictures and icons sizes */
 img {
   width: 100%;
-  margin: 0 0 0.8em;
+  margin: 1.5em 0 0;
 }
 
 /* unvisited link */
@@ -108,9 +107,11 @@ a.button {
   color: rgba(49, 50, 49, 1);
   font-weight: 600;
   padding: 14px 24px;
-  margin: 10px 0;
+  margin: 0px;
   border-radius: 50px;
-  transition: 0.3s opacity
+  transition-duration: 0.3s;
+  transition-property: opacity;
+
 }
 
 .button:visited {
@@ -122,6 +123,7 @@ a.button {
   color: rgba(49, 50, 49, 1);
   text-decoration: none;
   background-color: rgba(178, 231, 116, 0.7);
+  opacity: 0.8;
 }
 
 .button:active {
@@ -156,27 +158,28 @@ a.button {
 
 /*Layout styling*/
 .container {
-  padding: 20px;
+  padding: 0 20px;
 }
 
 header {
   background-color: rgba(250, 250, 250, 1);
   text-align: center;
-  padding: 10px 0;
+  padding: 10px 0 20px;
   position: fixed;
   width: 100%;
   box-shadow: 2px 2px 15px 0px rgba(50, 50, 50, 0.15);
 }
 
 .logo {
-  max-width: 250px;
-  margin: 0;
+  max-width: 150px;
+  margin: 1em 20px;
 }
 
 /*Navigation Bar Styling*/
 nav>ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 nav>ul>li {
@@ -186,6 +189,7 @@ nav>ul>li {
 nav>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
+  font-size: 0.9em;
   font-weight: 700;
   color: rgba(49, 50, 49, 1);
   text-decoration: none;
@@ -208,15 +212,15 @@ nav>ul>li>a:active {
 
 /*Main Section*/
 main {
-  padding-top: 126.61px;
+  padding-top: 118px;
 }
 
 /*Hero Section Styling*/
 #hero {
   background-color: rgba(152, 152, 153, 0.1);
-  padding: 20px 0;
   display: inline-block;
   width: 100%;
+  padding: 1.5em 20px 2em;
 }
 
 #hero h1 {
@@ -225,13 +229,11 @@ main {
 
 /*Work Section Styling*/
 #work .row {
-  margin: 0;
-  padding: 20px 0 40px 0;
+  margin: 0 0 3.5em;
 }
 
-.role {
+.project_role {
   color: rgba(49, 50, 49, 0.5);
-  font-weight:400;
 }
 
 /*About me page*/
@@ -281,7 +283,77 @@ footer a:hover, footer a:focus {
 }
 
 footer h2 {
-  margin: 20px 0 0;
+  margin: 1em 0 0;
+}
+
+
+@keyframes color-change {
+  from {fill: #edc655;}
+  to {fill: #f76414;}
+}
+
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+
+
+
+/* Nav animation - Brackets go out */
+
+div.brackets a:before, div.brackets a:after
+{
+    position: absolute;
+    opacity: 0;
+    font-size: 35px;
+    top: 0px;
+    transition: all 0.3s;
+}
+
+div.brackets a:before
+{
+    content: '(';
+    left: 0px;
+    transform: translateX(10px);
+}
+
+div.brackets a:after
+{
+    content: ')';
+    right: 0px;
+    transform: translateX(-10px);
+}
+
+div.brackets a:hover:before, div.brackets a:hover:after
+{
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
