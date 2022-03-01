@@ -114,6 +114,7 @@ a.button {
 
 }
 
+
 .button:visited {
   color: rgba(49, 50, 49, 1);
   text-decoration: none;
@@ -170,10 +171,16 @@ header {
   box-shadow: 2px 2px 15px 0px rgba(50, 50, 50, 0.15);
 }
 
+header a:hover, header a:focus {
+  background-color: transparent;
+}
+
 .logo {
   max-width: 150px;
   margin: 1em 20px;
 }
+
+
 
 /*Navigation Bar Styling*/
 nav>ul {
@@ -229,7 +236,7 @@ main {
 
 /*Work Section Styling*/
 #work .row {
-  margin: 0 0 3.5em;
+  margin: 0 0 10em;
 }
 
 .project_role {
@@ -249,11 +256,11 @@ main .column li {
 
 
 /* Projects' page*/
-.project_page main .row {
+main .row {
   margin: 0 0 3em;
 }
 
-.project_page main .row li {
+main .row li {
   margin: 0 0 1.5em;
 }
 
@@ -325,37 +332,8 @@ footer h2 {
 
 
 
-
 /* Nav animation - Brackets go out */
 
-div.brackets a:before, div.brackets a:after
-{
-    position: absolute;
-    opacity: 0;
-    font-size: 35px;
-    top: 0px;
-    transition: all 0.3s;
-}
-
-div.brackets a:before
-{
-    content: '(';
-    left: 0px;
-    transform: translateX(10px);
-}
-
-div.brackets a:after
-{
-    content: ')';
-    right: 0px;
-    transform: translateX(-10px);
-}
-
-div.brackets a:hover:before, div.brackets a:hover:after
-{
-    opacity: 1;
-    transform: translateX(0px);
-}
 
 
 
@@ -367,8 +345,9 @@ Medium devices (640px and larger)
 
     .logo {
       max-width: 150px;
-      margin: 1em 40px;
+      margin: 1em 0px;
       }
+
 
     body {
       font-size: 16px;
@@ -449,7 +428,7 @@ Medium devices (640px and larger)
   }
 
   .container {
-    max-width: 840px;
+    max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
     padding: 0 40px;
@@ -457,7 +436,7 @@ Medium devices (640px and larger)
   }
 
   #hero {
-    padding: 1.5em 0 2em;
+    padding: 1.5em 0 3em;
   }
 
   .col-lg-7 {
@@ -491,5 +470,7 @@ Medium devices (640px and larger)
 
 
 @media only screen and (min-width: 1440px) {
-
+  header .container {
+    max-width: 1400px;
+  }
 }
