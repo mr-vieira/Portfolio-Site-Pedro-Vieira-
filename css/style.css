@@ -15,9 +15,9 @@ body {
   background-color: rgba(250, 250, 250, 1);
   color: #313231;
   font-size: 1rem;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Libre Franklin', sans-serif;
   font-weight: 400;
-  line-height: 1.6;
+  line-height: 160%;
 }
 
 h3, h4 {
@@ -25,53 +25,79 @@ h3, h4 {
 }
 
 h1 {
-  font-family: 'Source Serif Pro', serif;
+  font-family: 'DM Serif Display', serif;
   font-size: 2.3em;
   font-weight: 800;
-  line-height: 1;
+  line-height: 120%;
   margin: 1em 0 0.5em;
 }
 
 h2 {
-  font-family: 'Source Serif Pro', serif;
-  font-size: 2em;
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.8em;
   font-weight: 700;
-  margin: 1em 0 0.3em;
+  margin: 1em 0 1em;
 }
+
+#work h2 {
+  margin: 1.5em 0 0;
+}
+
 
 h3 {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 1.6em;
-  font-weight: 600;
-  margin: 1em 0 0.3em;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 1.2em;
+  font-weight: 800;
+  margin: 0 0 1em;
 }
 
+
+#work h3 {
+  margin:  0 0 0.6em;
+}
+
+
 h4 {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 1em;
+font-family: 'Libre Franklin', sans-serif;
+  font-size: 0.8em;
   font-weight: 700;
   text-transform: uppercase;
-  margin: 2.5em 0 1em;
+  margin: 3em 0 1.5em;
 }
 
 p {
   margin: 0 0 1.5em;
 }
 
+#work .row p {
+  margin: 0 0 1em;
+}
+
 .hero h1 span {
-  font-size: 55%;
   display: block;
   margin: 0.7em 0 1em;
-  font-family: 'Source Sans Pro', sans-serif;
-  line-height: 1.2;
-  font-weight: 600;
+  font-family: 'Libre Franklin', sans-serif;
+  line-height: 130%;
+  font-weight: 500;
+  font-size: 24px;
 }
+
 
 /* pictures and icons sizes */
 img {
   width: 100%;
-  margin: 1.5em 0 0;
+  margin: 0;
+  border-radius: 0;
 }
+
+#work img{
+  margin: 0 0 1.5em;;
+}
+
+.row img {
+  margin: 1.5em 0;
+}
+
 
 /* unvisited link */
 a {
@@ -99,8 +125,6 @@ a:active {
   background-color: rgba(178, 231, 116, 1);
 }
 
-
-
 /* Buttons */
 a.button {
   display: inline-block;
@@ -108,13 +132,13 @@ a.button {
   background-color: rgba(178, 231, 116, 1);
   color: rgba(49, 50, 49, 1);
   font-weight: 600;
+  height: 0 20px;
   padding: 14px 24px;
-  margin: 0px;
+  margin: 1.3em 0 0 -4px;
   border-radius: 50px;
   transition-duration: 0.3s;
   transition-property: opacity;
 }
-
 
 .button:visited {
   color: rgba(49, 50, 49, 1);
@@ -160,16 +184,35 @@ a.button {
 
 /*Layout styling*/
 .container {
-  padding: 0 20px;
+  padding: 30px 30px;
+}
+
+
+#project_steps {
+  background:rgba(243, 243, 243, 1);
+}
+
+#conceptualization {
+  background:rgba(243, 243, 243, 1);
+}
+
+#showcase {
+  background:rgba(243, 243, 243, 1);
+}
+
+#problem_statement_1{
+  margin: 2em 0;
+  padding: 0.5em 2em 2em;
+  background: rgba(178, 231, 116, 0.5);
 }
 
 header {
   background-color: rgba(250, 250, 250, 1);
   text-align: left;
-  padding: 10px 0 20px;
+  padding: 10px 0;
   position: fixed;
   width: 100%;
-  box-shadow: 2px 2px 15px 0px rgba(50, 50, 50, 0.15);
+  box-shadow: 1px 1px 5px 0px rgba(50, 50, 50, 0.15);
 }
 
 .navtoggle, .navtoggle.responsive {
@@ -190,34 +233,36 @@ header a:hover, header a:focus {
 
 .logo {
   max-width: 150px;
-  margin: 1.5em 20px 0.4em;
+  margin: 1.5em 0px 0.4em;
 }
 
-
-
 /*Navigation Bar Styling*/
+
+header .container {
+  padding: 0 30px 0;
+}
 
 .navtoggle li:not(:last-child) {
   display: none;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
 }
 
 .navtoggle.responsive nav {
-  padding: 2em 0;
+  padding: 2em 0 0;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
   padding: 1.5em 0;
   border-top: 2px solid rgba(106, 123, 118, 0.1);
-
 }
 
-.navtoggle.responsive li:last-child  {
-  padding: 0 0 10px;
+.navtoggle.responsive li:last-child {
+  padding: 0;
+  border-top: none;
 }
 
 nav>ul {
@@ -252,7 +297,7 @@ nav>ul>li>a:active {
 
 /*Main Section*/
 main {
-  padding-top: 90.82px;
+  padding-top: 81px;
 }
 
 /*Hero Section Styling*/
@@ -260,7 +305,11 @@ main {
   background-color: rgba(152, 152, 153, 0.1);
   display: inline-block;
   width: 100%;
-  padding: 1.5em 20px 2em;
+  padding: 0.7em 0px 3em;
+}
+
+#hero .container {
+  padding: 0 30px;
 }
 
 #hero h1 {
@@ -268,39 +317,75 @@ main {
 }
 
 /*Work Section Styling*/
+#work .container {
+  padding: 0 30px;
+}
+
 #work .row {
-  margin: 0 0 10em;
+  padding: 4em 0;
+}
+
+
+#work .row:nth-child(odd){
+  background: ;
 }
 
 .project_role {
   color: rgba(49, 50, 49, 0.5);
   font-size: 0.9em;
   font-weight: 400;
+  margin-top: 0.5em;
 }
 
 /*About me page*/
+
+
+#about_me_content .row {
+  margin: 0;
+  padding: 0 0 1em;
+}
+
 #about_me_content .column {
   margin: 30px 0 80px 0;
 }
 
-main .column li {
-  margin: 0.8em 0;
+
+#about_me_content .column {
+  margin: 30px 0 80px 0;
 }
 
+main .column ul{
+  margin: 1.5em 0 3em;
+}
+
+main .column li {
+  margin: 2em 0;
+}
+
+#about_me_content h2 {
+  margin: 0 0 1em;
+}
 
 /* Projects' page*/
-main .row {
-  margin: 0 0 3em;
+
+.row {
+  padding: 1em 0 2em;
+}
+
+#work .row:last-child{
+  margin-bottom: 0;
 }
 
 main .row li {
-  margin: 0 0 1.5em;
+  margin: 0 0 1.2em ;
 }
+
 
 /*footer section Styling*/
 footer {
-  background-color: rgba(152, 152, 153, 0.1);
-  padding: 20px;
+  color: white;
+  background-color: rgba(49, 50, 49, 1);
+  padding: 40px;
   text-align: center;
 }
 
@@ -317,6 +402,7 @@ footer li {
 /*Social media styling*/
 footer svg {
   width: 3em;
+  fill: white;
 }
 
 footer a:hover svg {
@@ -328,13 +414,21 @@ footer a:hover, footer a:focus {
 }
 
 footer h2 {
-  margin: 1em 0 0;
+  margin: 1em 0 0.6em;
 }
 
+footer p {
+  font-size: 1em;
+}
 
 @keyframes color-change {
-  from {fill: #edc655;}
-  to {fill: #f76414;}
+  from {
+    fill: #edc655;
+  }
+
+  to {
+    fill: #f76414;
+  }
 }
 
 .sun {
@@ -346,8 +440,13 @@ footer h2 {
 }
 
 @keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
 }
 
 .cloud-front {
@@ -355,133 +454,124 @@ footer h2 {
 }
 
 @keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
 }
 
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
-
-
-
-
-
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
-
 @media only screen and (min-width: 640px) {
-
-    .logo {
-      max-width: 150px;
-      margin: 1em 0px;
-      }
-
-
-    body {
-      font-size: 16px;
-      }
-
-    header {
-      text-align: unset;
-      padding: 15px 0 5px;
-    }
-
-    nav {
-      width: auto;
-      float: right;
-      margin: 1em;
-    }
-
-    nav>ul>li {
-      display: inline-block;
-    }
-
-    .navtoggle li:not(:last-child) {
-      display: inline-block;
-    }
-
-    .navtoggle li:last-child {
-      display: none;
-    }
-
-    main {
-      padding: 87px 0 0;
-    }
-
-    .container {
-      max-width: 840px;
-      margin-left: auto;
-      margin-right: auto;
-      padding: 0 40px;
-    }
-
-    h2 {
-      margin: 1em 0 0.5em;
-    }
-
-    #hero {
-      padding: 4em 0 6em;
-    }
-
-    #hero h1{
-      text-align: center;
-    }
-
-    .hero h1 span {
-      text-align: center;
-    }
-
-    .hero p {
-      text-align: center;
-    }
-
-    .col-lg-4 {
-      width: 33.33%;
-    }
-
-    .col-md-6 {
-      width: 50%;
-    }
-
-    [class*="col-"] {
-      float: left;
-    }
-
-    .column_2{
-      padding: 0 30px;
-    }
-
-    .row:after {
-      content: "";
-      clear: both;
-      display: table;
-    }
-
+  .logo {
+    max-width: 150px;
+    margin: 1em 0px;
   }
 
-
-
-@media only screen and (min-width: 1024px) {
-
   body {
-    font-size: 18px;
+    font-size: 16px;
+    line-height: 160%;
+  }
+
+  header {
+    text-align: unset;
+    padding: 15px 0 5px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin: 1em;
+  }
+
+  nav>ul>li {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
   }
 
   main {
-    padding: 87px 0 0;
+    padding: 82.4px 0 0;
   }
 
   .container {
-    max-width: 1000px;
+    max-width: 700px;
     margin-left: auto;
     margin-right: auto;
-    padding: 0 40px;
+    padding: 40px 40px;
+  }
+
+  #about_me_title .container{
+    padding: 40px 40px 0;
+  }
+
+  #about_me_content .row {
+    margin: 0;
+    padding: 0;
+  }
+
+  #about_me_content .column {
+    margin:0;
+    padding: 3em 0 3em;
+  }
+
+  h2 {
+    font-size: 2em;
+    margin: 1em 0;
+  }
+
+  h4 {
+    margin: 4em 0 1.5em;
+  }
+
+  p {
+    margin: 0 0 1.4em;
+  }
+
+  a.button {
+    margin: 1em 0 0 -4px;
+  }
+
+  #hero {
+    padding: 3.5em 0 6em;
+  }
+
+  #hero h1 {
+    text-align: left;
+  }
+
+  .hero h1 span {
+    text-align: left;
+    margin: 0.5em 7em 0 0;
+  }
+
+  .hero p {
+    text-align: left;
+    margin-right: 7em;
 
   }
 
+  footer ul {
+    margin: 0;
+  }
+
+  footer .row {
+    padding: 1em;
+  }
 
 
   .col-lg-7 {
@@ -492,16 +582,75 @@ Medium devices (640px and larger)
     width: 41.66%;
   }
 
+  [class*="col-"] {
+    float: left;
+    padding: 0 1em 0 0;
+
+  }
+
+  .column_2 {
+    padding: 0 0 0 30px;
+  }
+
+  .row:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  body {
+    font-size: 16px;
+    line-height: 160%;
+  }
+
+  h1 {
+    font-size: 3.5em;
+  }
+
+  h2 {
+    font-size: 2em;
+    margin: 0 0 1em 0;
+  }
+
+  h3 {
+    line-height: 150%;
+    margin: 0 0 0.5em;
+  }
+
+  main {
+    padding: 82.4px 0 0;
+  }
+
+
+  header .container {
+    max-width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+  .container {
+    max-width: 740px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px 40px;
+  }
+
+  .col-lg-8 {
+    width: 66.66%;
+  }
+
   .col-lg-4 {
     width: 33.33%;
   }
 
-
   [class*="col-"] {
     float: left;
+    padding: 0 1.5em 0 0;
   }
 
-  .column_2{
+  .column_2 {
     padding: 0 30px;
   }
 
@@ -510,9 +659,7 @@ Medium devices (640px and larger)
     clear: both;
     display: table;
   }
-
 }
-
 
 @media only screen and (min-width: 1440px) {
   header .container {

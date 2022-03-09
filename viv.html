@@ -12,8 +12,7 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
 
   <!-- font styles and Fontawesome-->
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Source+Sans+Pro:wght@200;300;400;600;700&family=Source+Serif+Pro:wght@300;400;600;700;900&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/0f65908764.js" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Serif+Text:ital@0;1&family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">  <script src="https://kit.fontawesome.com/0f65908764.js" crossorigin="anonymous"></script>
 
 </head>
 
@@ -23,18 +22,18 @@
   <header>
     <div class="container">
       <div class="navtoggle" id="myNavtoggle">
-      <a href="index.html"><img src="img/logo/logo_pedro_vieira.svg" alt="Pedro Vieira" class="logo"></a>
+        <a href="index.html"><img src="img/logo/logo_pedro_vieira.svg" alt="Pedro Vieira" class="logo"></a>
 
-      <nav>
-        <ul>
-          <li><a href="index.html">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
-          <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
-        </ul>
-      </nav>
+        <nav>
+          <ul>
+            <li><a href="index.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+          </ul>
+        </nav>
 
-    </div>
+      </div>
     </div>
   </header>
 
@@ -45,16 +44,17 @@
     <div class="section" id="Project_intro">
       <div class="container">
 
-        <h1>Viv</h1>
-
-        <p>
-          “VIV” is a health and wellbeing web app designed to be a go-to tool when it comes to manage people’s daily health issues.
-        </p>
-
         <picture>
           <source srcset="img/projects/viv/viv_hero@1x.jpg" media="(max-width:767px)">
           <img src="img/projects/viv/viv_hero@2x.jpg" alt="Viv Hero image">
         </picture>
+
+        <h1>Viv Platform</h1>
+
+        <p>
+          A health and wellbeing web app designed to be a go-to tool when it comes to manage people’s daily health issues.
+        </p>
+
 
       </div>
     </div>
@@ -140,13 +140,19 @@
             The problem statement was later modifyed based on user research.
           </p>
 
-          <h4>Problem Statement</h4>
+          <div class="row" id="problem_statement_1">
 
-          <p>
-            Health-conscious users need a way to easily record and update health and medical data, as well as get access to health improvement guidance, because they want to stay in control of their health and wellness condition as much as possible.
-            <br>We will know this to be true when we see a recurring number of visits per user, as well as an increasing volume of uploaded information.
-          </p>
+            <h4>Problem Statement</h4>
 
+            <p>
+              Health-conscious users need a way to easily record and update health and medical data, as well as get access to health improvement guidance, because they want to stay in control of their health and wellness condition as much as possible.
+            </p>
+
+            <p>
+              We will know this to be true when we see a recurring number of visits per user, as well as an increasing volume of uploaded information.
+            </p>
+
+          </div>
         </div>
 
         <div class="row">
@@ -233,7 +239,7 @@
           <p>
             Based on new insights gathered from user research, I decided to reformulate the problem.
           </p>
-
+          <div class="row" id="problem_statement_1">
           <h4>Problem Statement Revised</h4>
           <p>
             Health-conscious users need a way to properly assess their own health condition, save medical and health information and share it with others. because they want to stay in control of their health and wellness condition as much as
@@ -243,7 +249,7 @@
           <p>
             We will know this to be true when we see an increasing volume of performed assessments and uploaded information.
           </p>
-
+        </div>
         </div>
       </div>
     </div>

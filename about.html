@@ -12,8 +12,7 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
 
   <!-- font styles and Fontawesome-->
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Source+Sans+Pro:wght@200;300;400;600;700&family=Source+Serif+Pro:wght@300;400;600;700;900&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/0f65908764.js" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Serif+Text:ital@0;1&family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">  <script src="https://kit.fontawesome.com/0f65908764.js" crossorigin="anonymous"></script>
 
 </head>
 
@@ -23,18 +22,18 @@
   <header>
     <div class="container">
       <div class="navtoggle" id="myNavtoggle">
-      <a href="index.html"><img src="img/logo/logo_pedro_vieira.svg" alt="Pedro Vieira" class="logo"></a>
+        <a href="index.html"><img src="img/logo/logo_pedro_vieira.svg" alt="Pedro Vieira" class="logo"></a>
 
-      <nav>
-        <ul>
-          <li><a href="index.html">Work</a></li>
-          <li><a href="about.html" class="active">About</a></li>
-          <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
-          <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
-        </ul>
-      </nav>
+        <nav>
+          <ul>
+            <li><a href="index.html">Work</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+          </ul>
+        </nav>
 
-    </div>
+      </div>
     </div>
   </header>
 
@@ -44,7 +43,12 @@
     <!-- about me section block 1 -->
     <div class="section" id="about_me_title">
       <div class="container">
-        <h1>About Me</h1>
+
+        <picture>
+          <source srcset="img/about/about@1x.jpg" media="(max-width:767px)">
+          <img src="img/about/about@2x.jpg" alt="Personal Image">
+        </picture>
+
       </div>
     </div>
 
@@ -52,14 +56,9 @@
     <div class="section" id="about_me_content">
       <div class="container">
 
-        <picture>
-          <source srcset="img/about/about@1x.jpg" media="(max-width:767px)">
-          <img src="img/about/about@2x.jpg" alt="Personal Image">
-        </picture>
 
         <div class="row">
 
-          <div class="column">
             <h2>My Story</h2>
 
             <p>
@@ -91,7 +90,10 @@
 
             <a href="files/cv_pedro_vieira.pdf" download class="button" target="_blank">Check my CV</a>
           </div>
+          </div>
 
+          <div class="container">
+            
           <div class="column" id="skills_tools">
             <h2>Skills & Tools</h2>
 
