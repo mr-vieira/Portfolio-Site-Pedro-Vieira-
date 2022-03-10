@@ -43,7 +43,6 @@ h2 {
   margin: 1.5em 0 0;
 }
 
-
 h3 {
   font-family: 'Libre Franklin', sans-serif;
   font-size: 1.2em;
@@ -51,14 +50,12 @@ h3 {
   margin: 0 0 1em;
 }
 
-
 #work h3 {
-  margin:  0 0 0.6em;
+  margin: 0 0 0.6em;
 }
 
-
 h4 {
-font-family: 'Libre Franklin', sans-serif;
+  font-family: 'Libre Franklin', sans-serif;
   font-size: 0.8em;
   font-weight: 700;
   text-transform: uppercase;
@@ -82,7 +79,6 @@ p {
   font-size: 24px;
 }
 
-
 /* pictures and icons sizes */
 img {
   width: 100%;
@@ -90,14 +86,14 @@ img {
   border-radius: 0;
 }
 
-#work img{
-  margin: 0 0 1.5em;;
+#work img {
+  margin: 0 0 1.5em;
+  ;
 }
 
 .row img {
   margin: 1.5em 0;
 }
-
 
 /* unvisited link */
 a {
@@ -132,7 +128,6 @@ a.button {
   background-color: rgba(178, 231, 116, 1);
   color: rgba(49, 50, 49, 1);
   font-weight: 600;
-  height: 0 20px;
   padding: 14px 24px;
   margin: 1.3em 0 0 -4px;
   border-radius: 50px;
@@ -187,20 +182,25 @@ a.button {
   padding: 30px 30px;
 }
 
-
 #project_steps {
-  background:rgba(243, 243, 243, 1);
+  background: rgba(243, 243, 243, 1);
 }
 
 #conceptualization {
-  background:rgba(243, 243, 243, 1);
+  background: rgba(243, 243, 243, 1);
 }
 
 #showcase {
-  background:rgba(243, 243, 243, 1);
+  background: rgba(243, 243, 243, 1);
 }
 
-#problem_statement_1{
+#problem_statement_1 {
+  margin: 2em 0;
+  padding: 0.5em 2em 2em;
+  background: rgba(178, 231, 116, 0.5);
+}
+
+#problem_statement_revised {
   margin: 2em 0;
   padding: 0.5em 2em 2em;
   background: rgba(178, 231, 116, 0.5);
@@ -237,7 +237,6 @@ header a:hover, header a:focus {
 }
 
 /*Navigation Bar Styling*/
-
 header .container {
   padding: 0 30px 0;
 }
@@ -325,9 +324,8 @@ main {
   padding: 4em 0;
 }
 
-
-#work .row:nth-child(odd){
-  background: ;
+#work .row:nth-child(odd) {
+  background: none;
 }
 
 .project_role {
@@ -338,8 +336,6 @@ main {
 }
 
 /*About me page*/
-
-
 #about_me_content .row {
   margin: 0;
   padding: 0 0 1em;
@@ -349,12 +345,11 @@ main {
   margin: 30px 0 80px 0;
 }
 
-
 #about_me_content .column {
   margin: 30px 0 80px 0;
 }
 
-main .column ul{
+main .column ul {
   margin: 1.5em 0 3em;
 }
 
@@ -367,19 +362,17 @@ main .column li {
 }
 
 /* Projects' page*/
-
 .row {
   padding: 1em 0 2em;
 }
 
-#work .row:last-child{
+#work .row:last-child {
   margin-bottom: 0;
 }
 
 main .row li {
-  margin: 0 0 1.2em ;
+  margin: 0 0 1.2em;
 }
-
 
 /*footer section Styling*/
 footer {
@@ -515,7 +508,7 @@ Medium devices (640px and larger)
     padding: 40px 40px;
   }
 
-  #about_me_title .container{
+  #about_me_title .container {
     padding: 40px 40px 0;
   }
 
@@ -525,7 +518,7 @@ Medium devices (640px and larger)
   }
 
   #about_me_content .column {
-    margin:0;
+    margin: 0;
     padding: 3em 0 3em;
   }
 
@@ -562,7 +555,6 @@ Medium devices (640px and larger)
   .hero p {
     text-align: left;
     margin-right: 7em;
-
   }
 
   footer ul {
@@ -572,7 +564,6 @@ Medium devices (640px and larger)
   footer .row {
     padding: 1em;
   }
-
 
   .col-lg-7 {
     width: 58.33%;
@@ -585,7 +576,6 @@ Medium devices (640px and larger)
   [class*="col-"] {
     float: left;
     padding: 0 1em 0 0;
-
   }
 
   .column_2 {
@@ -623,12 +613,11 @@ Medium devices (640px and larger)
     padding: 82.4px 0 0;
   }
 
-
   header .container {
     max-width: 1150px;
     margin-left: auto;
     margin-right: auto;
-}
+  }
 
   .container {
     max-width: 740px;
@@ -665,4 +654,4 @@ Medium devices (640px and larger)
   header .container {
     max-width: 1400px;
   }
-}
+} 
