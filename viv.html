@@ -13,8 +13,7 @@
 
   <!-- font styles and Fontawesome-->
   <link
-    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Serif+Text:ital@0;1&family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/0f65908764.js" crossorigin="anonymous"></script>
 
 </head>
@@ -25,7 +24,7 @@
   <header>
     <div class="container">
       <div class="navtoggle" id="myNavtoggle">
-        <a href="index.html"><img src="img/logo/logo_pedro_vieira.svg" alt="Pedro Vieira Logo" class="logo"></a>
+        <a href="index.html" id="logo">Pedro Vieira</a>
 
         <nav>
           <ul>
@@ -43,24 +42,30 @@
 
   <main>
 
-    <!-- section block 1 - project intro -->
-    <div class="section" id="Project_intro">
+    <div class="section hero" id="project_hero">
       <div class="container">
-
-        <picture>
-          <source srcset="img/projects/viv/viv_hero@1x.jpg" media="(max-width:767px)">
-          <img src="img/projects/viv/viv_hero@2x.jpg" alt="Viv Hero image">
-        </picture>
 
         <h1>Viv Platform</h1>
 
         <p>
-          A health and wellbeing web app designed to be a go-to tool when it comes to manage people’s daily health issues.
+          A health and wellbeing web app designed to be a go-to tool when it
+          comes to manage people’s daily health issues.
         </p>
-
 
       </div>
     </div>
+
+    <div class="section hero" id="picture_hero">
+
+        <picture>
+          <source srcset="img/projects/viv/viv_project_hero@1x.jpg" media="(max-width:767px)">
+          <img src="img/projects/viv/viv_project_hero@2x.jpg" alt="Viv Project Image">
+        </picture>
+
+    </div>
+
+
+
 
     <!-- section block 2 - project steps -->
 
@@ -143,7 +148,7 @@
             The problem statement was later modifyed based on user research.
           </p>
 
-          <div class="row" id="problem_statement_1">
+          <div class="row" id="problem_statement">
 
             <h4>Problem Statement</h4>
 
@@ -172,13 +177,16 @@
             <img src="img/projects/viv/viv_swotprofiles@2x.jpg" alt="competitive analysis image">
           </picture>
 
+          <div class="row" id="enhanced">
+
           <h4>Opportunities</h4>
-          <p>
-            The possibility of combining multiple practical features in one app alone.
-          </p>
-          <p>
-            A simple, minimal app that can be used in the most stressful of contexts.
-          </p>
+
+          <ul>
+            <li>The possibility of combining multiple practical features in one app alone.</li>
+            <li>A simple, minimal app that can be used in the most stressful of contexts.</li>
+          </ul>
+
+          </div>
 
         </div>
 
@@ -195,7 +203,7 @@
           <p>
             Prior to the actual user interviews, it was necessary to set up the research goals.
           </p>
-
+<div class="row" id="enhanced">
           <h4>Research Goals</h4>
 
           <ul>
@@ -203,6 +211,9 @@
             <li>Get to know users’ opinions on existing Apps and competing platforms.</li>
             <li>Collect data that may validate previous assumptions.</li>
           </ul>
+</div>
+
+<div class="row" id="enhanced">
 
           <h4>Key Findings</h4>
 
@@ -213,6 +224,7 @@
             <li>Most of participants have tried a few self-care apps to assist them with their meditation, help them sleep better, or simply track some biometric data.</li>
             <li>When it comes to scheduling appointments, they usually do it by phone and save the date on their digital calendars.</li>
           </ul>
+        </div>
 
         </div>
 
@@ -229,12 +241,16 @@
             The next move was to sort information and build clusters of related notes/ideas by creating an Affinity Map.
           </p>
 
+
+          <div class="row" id="enhanced">
+
           <h4>Insights</h4>
 
           <picture>
             <source srcset="img/projects/viv/viv_research_analysis@1x.jpg" media="(max-width:767px)">
             <img src="img/projects/viv/viv_research_analysis@2x.jpg" alt="research analysis image">
           </picture>
+        </div>
 
         </div>
 
@@ -243,7 +259,7 @@
           <p>
             Based on new insights gathered from user research, I decided to reformulate the problem.
           </p>
-          <div class="row" id="problem_statement_revised">
+          <div class="row" id="problem_statement">
             <h4>Problem Statement Revised</h4>
             <p>
               Health-conscious users need a way to properly assess their own health condition, save medical and health information and share it with others. because they want to stay in control of their health and wellness condition as much as
@@ -313,11 +329,16 @@
             the app:
           </p>
 
+          <div class="row" id="enhanced">
+
+          <h4> Core Features </h4>
           <ul>
             <li>Self-check Assessment</li>
             <li>Export & Share Self-check Reports</li>
             <li>Upload Files</li>
           </ul>
+
+          </div>
 
           <picture>
             <source srcset="img/projects/viv/Viv_low-fid_prototype@1x.jpg" media="(max-width:767px)">
@@ -328,17 +349,6 @@
             <source srcset="img/projects/viv/Viv_high-fid_prototype@1x.jpg" media="(max-width:767px)">
             <img src="img/projects/viv/Viv_high-fid_prototype@2x.jpg" alt="high fidelity prototype image">
           </picture>
-
-
-          <h4>Low-Fidelity Prototype</h4>
-          <p>
-            Low-fidelity prototypes alowed me to focus and iterate on the basic structure of the navigation, without having to worry about visual details.
-          </p>
-
-          <h4>High-Fidelity Prototype</h4>
-          <p>
-            Next, I’ve created the High-fidelity version prototype, showing a lot more detail regarding layout, buttons, icons and real or placeholder copy.
-          </p>
 
         </div>
 
@@ -362,6 +372,8 @@
             <img src="img/projects/viv/Viv_issue_1@2x.jpg" alt="first usability issue image">
           </picture>
 
+          <div class="row" id="enhanced">
+
           <h4>Issue 1</h4>
           <p>
             When asked to complete a self-check, not all participants recognized “Shelf-check” links as something to assess one’s health/ symptoms
@@ -372,11 +384,14 @@
             Change copy to something more direct and obvious such as: “Health-check”
           </p>
 
+        </div>
+
           <picture>
             <source srcset="img/projects/viv/Viv_issue_2@1x.jpg" media="(max-width:767px)">
             <img src="img/projects/viv/Viv_issue_2@2x.jpg" alt="second usability issue image">
           </picture>
 
+          <div class="row" id="enhanced">
           <h4>Issue 2</h4>
           <p>
             users should be able to name a file, assign it to a category and finally upload it to the platform. However, this design proved to be innefective when submited to a usability test, as users weren’t able to recognize the “category”
@@ -388,6 +403,7 @@
           <p>
             Change the drop-down menu to a more familiar / common pattern.
           </p>
+        </div>
 
         </div>
 
@@ -398,7 +414,7 @@
 
     <!-- section block 6 - Showcase -->
 
-    <div class="Section" id="showcase">
+    <div class="Section">
       <div class="container">
 
         <h2>Showcase</h2>
@@ -417,7 +433,7 @@
           </picture>
 
           <p>
-            <a href="files/VIV_Style_Guide.pdf" download>See the styleguide</a>
+            <a href="files/VIV_Style_Guide.pdf" download class="button" target="_blank">See the styleguide</a>
           </p>
 
         </div>
@@ -427,7 +443,7 @@
 
           <h3>Working Prototype</h3>
 
-          <a href="https://www.figma.com/proto/wNKSU5xFLrxtupdMRTsMeQ/VIV_CF_6.5?page-id=308%3A245&node-id=318%3A6388&viewport=241%2C48%2C0.07&scaling=scale-down&starting-point-node-id=318%3A6388&show-proto-sidebar=1">Explore the latest
+          <a href="https://www.figma.com/proto/wNKSU5xFLrxtupdMRTsMeQ/VIV_CF_6.5?page-id=308%3A245&node-id=318%3A6388&viewport=241%2C48%2C0.07&scaling=scale-down&starting-point-node-id=318%3A6388&show-proto-sidebar=1" class="button" target="_blank">Explore the latest
             working prototype</a>
 
         </div>
@@ -454,7 +470,7 @@
             All in all, I believe that through the design process of “Viv”, true insights were uncovered and ther’s still a lot to explore with regards to other user's needs and resulting features.
           </p>
           <p>
-            <a href="files/VIV_full_case_study_pdf.pdf" download>See the full case study</a>
+            <a href="files/VIV_full_case_study_pdf.pdf" download class="button" target="_blank">See the full case study</a>
           </p>
 
         </div>
@@ -526,4 +542,4 @@
 
 </body>
 
-</html> 
+</html>
