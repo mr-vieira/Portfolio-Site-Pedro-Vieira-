@@ -30,11 +30,41 @@ h1 {
 
 h2 {
   font-family: 'Nunito Sans', sans-serif;
-  font-size: 1.4em;
+  font-size: 1.6em;
   font-weight: 700;
   font-variant-caps: all-small-caps;
   margin: 1em 0;
   color: rgba(252, 82, 82, 1);
+}
+
+h3 {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 2.6em;
+  font-weight: 800;
+  line-height: 120%;
+  margin: 3em 0 0.5em;
+}
+
+h4 {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1em;
+  font-weight: 800;
+  line-height: 140%;
+  margin: 3em 0 0.5em;
+}
+
+h5 {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 0.9em;
+  font-weight: 400;
+  line-height: 140%;
+  text-align: center;
+  margin: 1em 0 2em;
+}
+
+p {
+  margin: 0 0 2em;
+  line-height: 155%;
 }
 
 #logo {
@@ -51,7 +81,6 @@ h2 {
 
 #hero {
   padding-bottom: 25px;
-  border-bottom: 1px solid rgba(49, 50, 49, 0.3);
 }
 
 #work h2 {
@@ -60,29 +89,9 @@ h2 {
   font-size: 1.4em;
 }
 
-h3 {
-  font-family: 'Nunito Sans', sans-serif;
-  font-size: 1.3em;
-  font-weight: 800;
-  margin: 1.2em 0 1em;
-}
-
 #work h3 {
   margin: 0 0 0.6em;
-}
-
-h4 {
-  font-family: 'Nunito Sans', sans-serif;
-  font-size: 0.9em;
-  font-weight: 800;
-  text-transform: uppercase;
-  text-decoration: underline 4px rgb(252, 82, 82, 0.5);
-  margin: 2em 0 1.5em;
-}
-
-p {
-  margin: 0 0 1.5em;
-  line-height: 150%;
+  font-size: 1.7em;
 }
 
 #work .row p {
@@ -97,7 +106,7 @@ p {
 img {
   width: 100%;
   margin: 0;
-  border-radius: 3px;
+  border-radius: 8px;
 }
 
 .hero img {
@@ -115,7 +124,11 @@ img {
 }
 
 .row img {
-  margin: 1.5em 0;
+  margin: 2em 0 0;
+}
+
+.issue {
+  margin: 4em 0 8em;
 }
 
 /* unvisited link */
@@ -135,13 +148,13 @@ a:hover,
 a:focus {
   text-decoration: none;
   color: rgba(49, 50, 49, 1);
-  background: rgba(178, 231, 116, 1);
+  background: none;
 }
 
 /* selected link */
 a:active {
   color: rgba(49, 50, 49, 1);
-  background-color: rgba(178, 231, 116, 1);
+  background-color: none;
 }
 
 /* Buttons */
@@ -152,7 +165,7 @@ a.button {
   color: white;
   font-weight: 600;
   padding: 14px 24px;
-  margin: 1em 0 0 -4px;
+  margin: 0.8em 0 0 -4px;
   border-radius: 50px;
   transition-duration: 0.3s;
   transition-property: opacity;
@@ -197,7 +210,7 @@ a.button {
 }
 
 .button.contact:active {
-  background-color: rgba(178, 231, 116, 0.3);
+  background-color: none;
   color: rgba(85, 173, 125, 1);
   text-decoration: none;
 }
@@ -254,8 +267,12 @@ a.button {
   background: rgba(240, 240, 240, 1);
 }
 
-#usability_testing {
+#wireframing_prototypig {
   background: rgba(240, 240, 240, 1);
+}
+
+#usability_testing {
+  background: rgba(253, 253, 253, 1);
 }
 
 #final_thoughts {
@@ -289,33 +306,52 @@ a.button {
 }
 
 #problem_statement {
-  background: rgba(252, 82, 82, 0.2);
   text-align: center;
   font-family: "Source Serif Pro", serif;
   font-size: 1.2em;
   line-height: 145%;
   font-weight: 400;
-  margin: 3em 0;
-  padding: 1em 2.5em;
-  border-radius: 10px;
+  margin: 5em 0 3em;
+  padding: 0.5em 0.5em 1em;
+  border-bottom: 5px solid rgba(252, 82, 82, 1);
+  border-top: 5px solid rgba(252, 82, 82, 1);
+}
+
+#problem_statement h4 {
+  font-size: 1.2em;
+  margin: 2em 0 1em;
 }
 
 #enhanced {
-  background: white;
-  text-align: center;
-  font-family: "Source Serif Pro", serif;
+  background: none;
+  text-align: left;
+  font-family: "Nunito sans", sans-serif;
+  margin: 5em 3em 4em;
+  padding: 0;
+  border-radius: 8px;
+  box-shadow: none;
+}
+
+#enhanced h4 {
   font-size: 1em;
-  line-height: 145%;
-  font-weight: 500;
-  margin: 3em 0;
-  padding: 1em 2em;
-  border-radius: 10px;
-  box-shadow: 2px 2px 20px 0 rgb(50 50 50 / 0%);
+  font-weight: 700;
+  line-height: 2em;
+  text-align: left;
+  margin: 2em 0 0.5em;
+  text-decoration: underline 4px rgba(252, 82, 82, 1);
+  text-underline-offset: 4px;
+}
+
+#enhanced h5 {
+  font-size: 0.8em;
+}
+
+#enhanced p {
+  margin: 0.7em 0 0;
 }
 
 #enhanced ul {
-  text-align: left;
-  padding: 1em 1em 0;
+  padding: 0;
 }
 
 #enhanced_2 {
@@ -335,21 +371,26 @@ a.button {
   background: rgba(252, 82, 82, 0.2);
   text-align: center;
   font-family: "Source Serif Pro", serif;
-  font-size: 1em;
-  line-height: 145%;
+  font-size: 1.2em;
+  line-height: 140%;
   font-weight: 600;
   margin: 2em 0;
-  padding: 1.8em 2.5em 0.5em;
+  padding: 1.8em 1.6em 0.5em;
   border-radius: 10px;
   box-shadow: 2px 2px 20px 0 rgb(50 50 50 / 0%);
 }
 
+#enhanced_challenge h4 {
+  margin: 1em 0;
+}
+
 header {
-  background-color: rgba(253, 253, 253, 1);
+  background-color: white;
   text-align: left;
-  padding: 30px 0 24px;
+  padding: 34px 0 24px;
   position: fixed;
   width: 100%;
+  box-shadow: 0 4px 10px 0 rgba(218, 218, 218, 0.1);
 }
 
 .navtoggle,
@@ -439,10 +480,10 @@ main {
 
 /* Hero Section Styling */
 #hero {
-  background-color: rgba(253, 253, 253, 1);
+  background-color: rgba(246, 246, 246, 1);
   display: inline-block;
   width: 100%;
-  padding: 5.5em 0 3em;
+  padding: 5em 0 3em;
 }
 
 #hero .container {
@@ -457,7 +498,7 @@ main {
 #project_hero {
   background: rgba(49, 50, 49, 1);
   color: white;
-  padding: 3em 0 4em;
+  padding: 0;
 }
 
 #project_hero h1 {
@@ -569,7 +610,8 @@ footer h2 {
   color: white;
   font-family: 'Source Serif Pro', serif;
   font-weight: 700;
-  font-size: 2em;
+  font-size: 2.5em;
+  font-variant: normal;
 }
 
 footer p {
@@ -638,15 +680,15 @@ Medium devices (640px and larger)
 
   header {
     text-align: unset;
-    padding: 15px 0 5px;
+    padding: 15px 0 10px;
   }
 
   #logo {
     font-family: 'Nunito Sans', sans-serif;
-    font-size: 1.5em;
+    font-size: 1.1em;
     font-weight: 700;
     text-decoration: none;
-    margin: 0.66em 0 0;
+    margin: 0.85em 0 0;
     position: absolute;
   }
 
@@ -658,6 +700,10 @@ Medium devices (640px and larger)
 
   nav > ul > li {
     display: inline-block;
+  }
+
+  nav > ul > li > a {
+    font-size: 0.9em;
   }
 
   .navtoggle li:not(:last-child) {
@@ -672,12 +718,25 @@ Medium devices (640px and larger)
     padding: 82.4px 0 0;
   }
 
+  .row {
+    padding: 2em 0;
+  }
+
+  .row img {
+    margin: 1em 0 0;
+  }
+
   #work h2 {
     margin: 2em 0 0;
   }
 
+  .project_role {
+    font-size: 0.7em;
+    margin-top: 0.5em;
+  }
+
   .container {
-    max-width: 900px;
+    max-width: 700px;
     margin-left: auto;
     margin-right: auto;
     padding: 40px;
@@ -703,24 +762,27 @@ Medium devices (640px and larger)
   }
 
   h3 {
-    font-size: 1.8em;
-    margin: 2.4em 0 1em;
+    font-size: 2.8em;
+    margin: 1.6em 0 0.5em;
   }
 
   h4 {
-    margin: 2em 0 1em;
+    margin: 4em 0 1em;
   }
 
   p {
-    margin: 0 0 2em;
+    margin: 0 0 1.5em;
+    line-height: 155%;
   }
 
   a.button {
-    margin: 1em 0 0 -4px;
+    font-size: ;
+    margin: ;
+    padding: 1em 2em ;
   }
 
   #hero {
-    padding: 13em 0 10em;
+    padding: 10em 0 7em;
   }
 
   #hero h1 {
@@ -767,6 +829,26 @@ Medium devices (640px and larger)
     padding: 0 40px 0 0;
   }
 
+  #problem_statement {
+    text-align: center;
+    font-family: "Source Serif Pro", serif;
+    font-size: 1.3em;
+    line-height: 145%;
+    font-weight: 400;
+    margin: 6em 0 3em;
+    padding: 0 1em 1.2em;
+  }
+
+  #problem_statement h4 {
+    font-size: 1em;
+    margin: 2.3em 0 1.3em;
+  }
+
+  #enhanced {
+    padding: 0;
+    margin: 3em 10em 2em;
+  }
+
   #enhanced_2 {
     font-size: 1.3em;
     line-height: 145%;
@@ -775,16 +857,26 @@ Medium devices (640px and larger)
     padding: 1.2em 2.5em 2.5em;
   }
 
+  #enhanced h4 {
+    font-size: 1em;
+    font-weight: 800;
+    line-height: 2em;
+    text-align: left;
+    margin: 1em 0 0.3em;
+    text-decoration: underline 4px rgba(252, 82, 82, 1);
+    text-underline-offset: 4px;
+  }
+
   #enhanced_2 p {
     margin: 1.5em 0 0;
   }
 
   #enhanced_challenge {
-    font-size: 1.3em;
+    font-size: 1.2em;
     line-height: 145%;
-    font-weight: 600;
+    font-weight: 400;
     margin: 2em 0;
-    padding: 1.8em 4em 0.5em;
+    padding: 1.8em 4em 1em;
   }
 
   .row::after {
@@ -808,22 +900,26 @@ Medium devices (640px and larger)
     margin: 1em 0;
   }
 
+  h4 {
+    font-size: 1.3em;
+  }
+
   #work p {
     font-size: 18px;
   }
 
   main {
-    padding: 82.4px 0 0;
+    padding: 80px 0 0;
   }
 
   header .container {
-    max-width: 1150px;
+    max-width: 920px;
     margin-left: auto;
     margin-right: auto;
   }
 
   .container {
-    max-width: 920px;
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
     padding: 40px;
@@ -835,6 +931,10 @@ Medium devices (640px and larger)
 
   .col-lg-4 {
     width: 33.33%;
+  }
+
+  main .row li {
+    margin: 2em 0;
   }
 
   [class*="col-"] {
@@ -851,6 +951,11 @@ Medium devices (640px and larger)
     clear: both;
     display: table;
   }
+
+  #enhanced h4 {
+    font-size: 1.3em;
+  }
+
 }
 
 @media only screen and (min-width: 1440px) {
