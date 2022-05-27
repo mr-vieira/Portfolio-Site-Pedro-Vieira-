@@ -519,7 +519,7 @@ main {
 }
 
 #work .row {
-  padding: 4em 0;
+  padding: 3em 0;
 }
 
 #work .row:nth-child(odd) {
@@ -731,7 +731,7 @@ Medium devices (640px and larger)
   }
 
   .project_role {
-    font-size: 0.7em;
+    font-size: 0.9em;
     margin-top: 0.5em;
   }
 
@@ -888,7 +888,7 @@ Medium devices (640px and larger)
 
 @media only screen and (min-width: 1024px) {
   body {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 160%;
   }
 
@@ -904,22 +904,18 @@ Medium devices (640px and larger)
     font-size: 1.3em;
   }
 
-  #work p {
-    font-size: 18px;
-  }
-
   main {
     padding: 80px 0 0;
   }
 
   header .container {
-    max-width: 920px;
+    max-width: 980px;
     margin-left: auto;
     margin-right: auto;
   }
 
   .container {
-    max-width: 800px;
+    max-width: 840px;
     margin-left: auto;
     margin-right: auto;
     padding: 40px;
@@ -960,6 +956,6 @@ Medium devices (640px and larger)
 
 @media only screen and (min-width: 1440px) {
   header .container {
-    max-width: 1150px;
+    max-width: 1280px;
   }
 }
