@@ -30,9 +30,10 @@ h1 {
 
 h2 {
   font-family: 'Nunito Sans', sans-serif;
-  font-size: 1.4em;
+  font-size: 1.3em;
   font-weight: 700;
   font-variant-caps: all-small-caps;
+  letter-spacing: 2px;
   margin: 0.5em 0 2em;
   color: rgba(252, 82, 82, 1);
 }
@@ -73,6 +74,14 @@ p {
   font-weight: 900;
   text-decoration: none;
   margin: 1em 0 0;
+}
+
+#positioning {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 0.8em;
+  line-height: 0.3em;
+  text-decoration: none;
+  margin: 0;
 }
 
 #myNavtoggle ul {
@@ -732,7 +741,6 @@ Medium devices (640px and larger)
   #logo {
     font-family: 'Nunito Sans', sans-serif;
     font-size: 1em;
-    font-weight: 800;
     text-decoration: none;
     margin: 0;
     position: absolute;
@@ -749,7 +757,7 @@ Medium devices (640px and larger)
   }
 
   nav > ul > li > a {
-    font-size: 0.9em;
+    font-size: 0.8em;
   }
 
   .navtoggle li:not(:last-child) {
@@ -786,16 +794,16 @@ Medium devices (640px and larger)
   }
 
   header .container {
-    max-width: 780px;
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
   }
 
   .container {
-    max-width: 780px;
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
-    padding: 72px 48px;
+    padding: 72px 30px;
   }
 
   .col-lg-8 {
@@ -907,11 +915,9 @@ Medium devices (640px and larger)
     margin: 0;
   }
 
-
   #about img {
     padding: 0 5em 0 0;
   }
-
 
   #project_hero h1 {
     text-align: center;
@@ -976,11 +982,15 @@ Medium devices (640px and larger)
   }
 
   header .container {
-    max-width: 840px;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .container {
-    max-width: 840px;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   main .row li {
@@ -1006,7 +1016,7 @@ Medium devices (640px and larger)
     text-align: left;
     font-size: 2.7em;
     line-height: 120%;
-    margin-right: 1em;
+    margin-right: 3.5em;
   }
 
   #problem_statement p {
@@ -1024,13 +1034,13 @@ Medium devices (640px and larger)
 
 @media only screen and (min-width: 1440px) {
   header .container {
-    max-width: 920px;
+    max-width: 1080px;
     margin-left: auto;
     margin-right: auto;
   }
 
   .container {
-    max-width: 920px;
+    max-width: 1080px;
     margin-left: auto;
     margin-right: auto;
     padding: 72px 30px;
