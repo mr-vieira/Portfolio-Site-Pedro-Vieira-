@@ -26,20 +26,28 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
 
   <!-- font styles and Fontawesome-->
-  <link <link
-    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
-    rel="stylesheet">
-  <script src="https://kit.fontawesome.com/0f65908764.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"><script src="https://kit.fontawesome.com/0f65908764.js" crossorigin="anonymous"></script>
 
 </head>
 
 <body>
 
+  <!-- PROGRESS BAR -->
+  <div id="scroll-progress"></div>
+
+  <!-- BACK TO TOP BUTTON -->
+  <button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
+
+
   <!-- For the header -->
-  <header>
+  <header id="navbar">
     <div class="container">
       <div class="navtoggle" id="myNavtoggle">
-        <a href="index.html" id="logo">Pedro Vieira</a>
+        <a href="index.html" id="logo">Pedro Vieira</a><br>
+        <a href="index.html" id="positioning">UX/UI Designer</a>
+
 
         <nav>
           <ul>
@@ -60,7 +68,7 @@
 
 
     <div class="section" id="project_hero">
-      <div class="container">
+      <div class="container_hero">
 
         <h1>Speakin'</h1>
 
@@ -90,13 +98,13 @@
 
         <div class="row">
 
-          <div class="column col-lg-4">
+          <div class="column col-lg-5">
 
             <h1>Project Overview</h1>
 
           </div>
 
-          <div class="column col-lg-8">
+          <div class="column col-lg-7">
 
             <h3>Problem</h3>
             <p>Language students need new and effective ways of learning and utilising new words and concepts.</p>
@@ -155,13 +163,13 @@
         <div class="row">
           <h2>The Challenge</h2>
 
-          <div class="column col-lg-4">
+          <div class="column col-lg-5">
 
             <h1>Some Context</h1>
 
           </div>
 
-          <div class="column col-lg-8">
+          <div class="column col-lg-7">
 
             <p>No matter the age, motivations or walks of life, people are always seeking knowledge and trying to learn new disciplines. But if learning and memorizing dozens, perhaps hundreds of new terms and concepts seems daunting, one can think
               of how overwhelming it is to learn a new language. It requires time, dedication and consistency.</p>
@@ -192,13 +200,13 @@
         <div class="row">
           <h2>Research</h2>
 
-          <div class="column col-lg-4">
+          <div class="column col-lg-5">
 
             <h1>What's out <br>there?</h1>
 
           </div>
 
-          <div class="column col-lg-8">
+          <div class="column col-lg-7">
 
             <h3>Competitive Analysis</h3>
 
@@ -237,13 +245,13 @@
 
         <div class="row">
 
-          <div class="column col-lg-4">
+          <div class="column col-lg-5">
 
             <h1>Who am I designing for?</h1>
 
           </div>
 
-          <div class="column col-lg-8">
+          <div class="column col-lg-7">
 
             <p>Engaging directly with users is crucial to test an assumption or hypothesis. I conducted a series of user interviews as a way of gaining insights into users’ motivations, goals and expectations. I recruited 3 participants who’ve used
               language learning apps or engaged with some sort of language learning activity in recent months.</p>
@@ -307,13 +315,13 @@
         <div class="row">
           <h2>Ideation</h2>
 
-          <div class="column col-lg-4">
+          <div class="column col-lg-5">
 
             <h1>Now "what"?</h1>
 
           </div>
 
-          <div class="column col-lg-8">
+          <div class="column col-lg-7">
 
             <p>With a primary Persona, User Stories and a refined Problem Statement, I was now able to think of new functionalities or features aimed at solving real problems for real people.</p>
 
@@ -351,13 +359,13 @@
 
           <div class="row">
 
-            <div class="column col-lg-4">
+            <div class="column col-lg-5">
 
               <h1>Information Architecture</h1>
 
             </div>
 
-            <div class="column col-lg-8">
+            <div class="column col-lg-7">
 
               <h3>User Flows</h3>
 
@@ -391,13 +399,13 @@
           <div class="row">
             <h2>Wireframes & Prototypes</h2>
 
-            <div class="column col-lg-4">
+            <div class="column col-lg-5">
 
               <h1>Pen meets <br>Paper</h1>
 
             </div>
 
-            <div class="column col-lg-8">
+            <div class="column col-lg-7">
 
               <p>Referring to the previously created User Flows, I started to sketch out the first wireframes. After some iterations, I uploaded the individual sketches and created a Low-Fidelity Prototype, with enough detail and functionality to be
                 tested with target users while they try to complete given tasks. </p>
@@ -430,13 +438,13 @@
         <div class="row">
           <h2>Usability Testing</h2>
 
-          <div class="column col-lg-4">
+          <div class="column col-lg-5">
 
             <h1>Time to Test</h1>
 
           </div>
 
-          <div class="column col-lg-8">
+          <div class="column col-lg-7">
 
             <p>After recruiting 3 new participants, it was time to put the prototype to the test, and evaluate if the proposed features, Information architecture and navigation were clear and efficient.</p>
 
@@ -471,13 +479,13 @@
 
         <div class="row">
 
-          <div class="column col-lg-4">
+          <div class="column col-lg-5">
 
             <h1>Iterations</h1>
 
           </div>
 
-          <div class="column col-lg-8">
+          <div class="column col-lg-7">
 
             <h3>Refining the prototype</h3>
 
@@ -544,13 +552,13 @@
         <div class="row">
           <h2>Interactive Prototype</h2>
 
-          <div class="column col-lg-4">
+          <div class="column col-lg-5">
 
             <h1>Give it a try</h1>
 
           </div>
 
-          <div class="column col-lg-8">
+          <div class="column col-lg-7">
 
             <picture>
               <source srcset="img/projects/speakin'/speakin (1).gif" media="(max-width:767px)">
@@ -575,13 +583,13 @@
         <div class="row">
           <h2>Conclusion</h2>
 
-          <div class="column col-lg-4">
+          <div class="column col-lg-5">
 
             <h1>Final Thoughts</h1>
 
           </div>
 
-          <div class="column col-lg-8">
+          <div class="column col-lg-7">
 
 <h3>Key Learnings</h3>
 <p>As a first experience with a UX design project,  the learning by doing approach felt like a good starting point. Instead of expecting breakthrough ideas, I was focused instead on internalizing the methods, frameworks and mindset of a UX designer.</p>
@@ -599,6 +607,12 @@
 
           </div>
         </div>
+
+        <div class="row" id="previous_next_row">
+            <a href="viv.html" class="button" id="previous_next">⟵ previous</a>
+            <a href="Water&Energy_Dashboard.html" class="button" id="previous_next">next ⟶</a>
+        </div>
+
       </div>
     </div>
 

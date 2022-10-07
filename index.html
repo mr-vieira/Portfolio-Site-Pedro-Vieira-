@@ -23,18 +23,28 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
 
   <!-- font styles and Fontawesome-->
-  <link
-<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Source+Code+Pro:wght@500;600;700&family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">  <script src="https://kit.fontawesome.com/0f65908764.js" crossorigin="anonymous"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/0f65908764.js" crossorigin="anonymous"></script>
 
 </head>
 
 <body>
 
+<!-- PROGRESS BAR -->
+
+<!-- BACK TO TOP BUTTON -->
+<button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
+
   <!-- For the header -->
-  <header>
+  <header id="navbar">
     <div class="container">
       <div class="navtoggle" id="myNavtoggle">
-        <a href="index.html" id="logo">Pedro Vieira</a>
+        <a href="index.html" id="logo">Pedro Vieira</a><br>
+        <a href="index.html" id="positioning">UX/UI Designer</a>
+
 
         <nav>
           <ul>
@@ -58,20 +68,43 @@
       <div class="container">
 
         <h1>
-          Hi, <span>I’m Pedro 🖖</span>, a UX Designer passionate about creativity and sustainable design.
+          Hi 🖖, <span>I’m Pedro</span>, a UX/UI Designer passionate about digital sustainable design.
         </h1>
 
       </div>
+
+
+      <!-- DOWN ARROW -->
+
+      <div id="wrapper">
+  <div id="wrapper-inner">
+<div id="scroll-down">
+  <span class="arrow-down">
+
+  <!-- css generated icon -->
+  </span>
+  <span id="scroll-title">
+    <a href="#work" onclick="menuToggle()">My Work</a>
+  </span>
+</div>
+  </div>
+  </div>
+
+
+
     </div>
 
     <!-- For the projects -->
     <div class="section" id="work">
 
-      <div class="container">
-        <h2>My Work</h2>
-      </div>
 
       <div class="row" id="viv_project">
+
+        <div class="container">
+          <h2>UX/UI Projects</h2>
+        </div>
+
+
         <div class="container">
           <!-- open row that holds (2) columns for project -->
 
@@ -79,8 +112,8 @@
             <!-- open first column (used for image) -->
 
             <picture>
-              <source srcset="img/projects/viv/viv_project_work v2@1x.jpg" media="(max-width:767px)">
-              <img src="img/projects/viv/viv_project_work v2@2x.jpg" alt="Viv Project Image">
+              <source srcset="img/work/viv@1x.jpg" media="(max-width:767px)">
+              <img src="img/work/viv@2x.jpg" alt="Viv Project Image">
             </picture>
           </div><!-- end first column (used for image) -->
 
@@ -105,6 +138,9 @@
 
       </div><!-- end row that holds (2) columns for project -->
 
+
+<!-- SPEAKIN PROJECT -->
+
       <div class="row" id="speakin'_project">
         <div class="container">
           <!-- open row that holds (2) columns for project -->
@@ -113,8 +149,8 @@
             <!-- open first column (used for image) -->
 
             <picture>
-              <source srcset="img/projects/speakin'/speakin_project_work@1x.jpg" media="(max-width:767px)">
-              <img src="img/projects/speakin'/speakin_project_work@2x.jpg" alt="Speakin' Project Image">
+              <source srcset="img/work/speakin'@1x.jpg" media="(max-width:767px)">
+              <img src="img/work/speakin'@2x.jpg" alt="Speakin' Project Image">
             </picture>
 
           </div><!-- end first column (used for image) -->
@@ -138,38 +174,130 @@
       </div><!-- end row that holds (2) columns for project -->
 
 
-      <div class="row" id="Comming Soon">
-        <div class="container">
-          <!-- open row that holds (2) columns for project -->
 
-          <div class="column_1 col-md-6 col-lg-7">
-            <!-- open first column (used for image) -->
+      <!-- COMING SOON PROJECT -->
 
-            <picture>
-              <source srcset="img/projects/Coming up/Coming_up_project_work@1x.jpg" media="(max-width:767px)">
-              <img src="img/projects/Coming up/Coming_up_project_work@2x.jpg" alt="Viv Project Image">
-            </picture>
-          </div><!-- end first column (used for image) -->
+            <div class="row" id="Comming Soon">
+              <div class="container">
+                <!-- open row that holds (2) columns for project -->
 
-          <div class="column_2 col-md-6 col-lg-5">
-            <!-- open second column (used for text) -->
+                <div class="column_1 col-md-6 col-lg-7">
+                  <!-- open first column (used for image) -->
 
-            <h3>Energy&Water Management Dashboard</h3>
+                  <picture>
+                    <source srcset="img/work/Energy&water_project@1x.jpg" media="(max-width:767px)">
+                    <img src="img/work/Energy&water_project@2x.jpg" alt="Viv Project Image">
+                  </picture>
+                </div><!-- end first column (used for image) -->
 
-            <p>
-              Working on a new digital tool to help households monitor and reduce their energy and water consumption.
-            </p>
+                <div class="column_2 col-md-6 col-lg-5">
+                  <!-- open second column (used for text) -->
 
-            <p class="project_role">
-              UX / UI / RESEARCH / BRANDING
-            </p>
+                  <h3>Energy & Water Management Dashboard</h3>
 
-            <a href="" class="button">coming soon</a>
+                  <p>
+                    Working on a new digital tool to help households monitor and reduce their energy and water consumption.
+                  </p>
 
-          </div><!-- end second column -->
-        </div>
+                  <p class="project_role">
+                    UX / UI / RESEARCH / BRANDING
+                  </p>
 
-      </div><!-- end row that holds (2) columns for project -->
+                  <a href="" class="button">coming soon</a>
+
+
+                </div><!-- end second column -->
+              </div>
+
+            </div><!-- end row that holds (2) columns for project -->
+
+
+
+      <!-- GRAPHIC DESIGN -->
+
+            <div class="row" id="Graphic_Design_Showcase">
+
+              <div class="container">
+                <h2>Graphic Design Projects</h2>
+              </div>
+
+              <div class="container">
+                <!-- open row that holds (2) columns for project -->
+
+                <div class="column_1 col-md-5 col-lg-7">
+                  <!-- open first column (used for image) -->
+
+                  <picture>
+                    <source srcset="img/work/GD_Paladin_Logo@1x.jpg" media="(max-width:767px)">
+                    <img class="mySlides" src="img/work/GD_Paladin_Logo@2x.jpg" alt="Speakin' Project Image">
+                  </picture>
+
+                  <picture>
+                    <source srcset="img/work/GD_Paladin_Vinegar@1x.jpg" media="(max-width:767px)">
+                    <img class="mySlides" src="img/work/GD_Paladin_Vinegar@2x.jpg" alt="Speakin' Project Image">
+                  </picture>
+
+                  <picture>
+                    <source srcset="img/work/GD_Quinta_Rainha@1x.jpg" media="(max-width:767px)">
+                    <img class="mySlides" src="img/work/GD_Quinta_Rainha@2x.jpg" alt="Speakin' Project Image">
+                  </picture>
+
+                  <picture>
+                    <source srcset="img/work/GD_Hortas_Rainha@1x.jpg" media="(max-width:767px)">
+                    <img class="mySlides" src="img/work/GD_Hortas_Rainha@2x.jpg" alt="Speakin' Project Image">
+                  </picture>
+
+                  <picture>
+                    <source srcset="img/work/GD_Olga_Matias_Bussiness_cards@1x.jpg" media="(max-width:767px)">
+                    <img class="mySlides" src="img/work/GD_Olga_Matias_Bussiness_cards@2x.jpg" alt="Speakin' Project Image">
+                  </picture>
+
+                  <picture>
+                    <source srcset="img/work/GD_Olga_Matias_Bag@1x.jpg" media="(max-width:767px)">
+                    <img class="mySlides" src="img/work/GD_Olga_Matias_Bag@2x.jpg" alt="Speakin' Project Image">
+                  </picture>
+
+                  <picture>
+                    <source srcset="img/work/GD_Casca_Rija_Almond_butter@1x.jpg" media="(max-width:767px)">
+                    <img class="mySlides" src="img/work/GD_Casca_Rija_Almond_butter@2x.jpg" alt="Speakin' Project Image">
+                  </picture>
+
+                  <picture>
+                    <source srcset="img/work/GD_Casca_Rija_Brunch@1x.jpg" media="(max-width:767px)">
+                    <img class="mySlides" src="img/work/GD_Casca_Rija_Brunch@2x.jpg" alt="Speakin' Project Image">
+                  </picture>
+
+                  <picture>
+                    <source srcset="img/work/GD_Mendes_Goncalves_Brochure@1x.jpg" media="(max-width:767px)">
+                    <img class="mySlides" src="img/work/GD_Mendes_Goncalves_Brochure@2x.jpg" alt="Speakin' Project Image">
+                  </picture>
+
+                  <picture>
+                    <source srcset="img/work/GD_Mendes_Goncalves_Pins@1x.jpg" media="(max-width:767px)">
+                    <img class="mySlides" src="img/work/GD_Mendes_Goncalves_Pins@2x.jpg" alt="Speakin' Project Image">
+                  </picture>
+
+                </div><!-- end first column (used for image) -->
+
+
+                <div class="column_2 col-md-7 col-lg-5">
+                  <!-- open second column (used for text) -->
+
+                  <h3>Graphic Design<br>Selected work</h3>
+
+                  <p>
+                    A curated selection of both solo and collaborative graphic design projects.
+                  </p>
+
+                  <p class="project_role">
+                    VISUAL ID / PACKAGING / BRAND ASSETS
+                  </p>
+
+                  <a href="graphic design showcase.html" class="button">view projects</a>
+                </div><!-- end second column -->
+              </div>
+            </div><!-- end row that holds (2) columns for project -->
+          </div>
 
 
   </main>

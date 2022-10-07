@@ -4,15 +4,14 @@
 <head>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VTHHG2PWXQ"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VTHHG2PWXQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-    gtag('config', 'G-VTHHG2PWXQ');
-  </script>
-
+  gtag('config', 'G-VTHHG2PWXQ');
+</script>
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=375px, initial-scale=1">
@@ -24,20 +23,28 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
 
   <!-- font styles and Fontawesome-->
-  <link <link
-    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
-    rel="stylesheet">
-  <script src="https://kit.fontawesome.com/0f65908764.js" crossorigin="anonymous"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/0f65908764.js" crossorigin="anonymous"></script>
 
 </head>
-
 <body>
 
+  <!-- PROGRESS BAR -->
+  <div id="scroll-progress"></div>
+
+  <!-- BACK TO TOP BUTTON -->
+  <button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
+
+
   <!-- For the header -->
-  <header>
+  <header id="navbar">
     <div class="container">
       <div class="navtoggle" id="myNavtoggle">
-        <a href="index.html" id="logo">Pedro Vieira</a>
+        <a href="index.html" id="logo">Pedro Vieira</a><br>
+        <a href="index.html" id="positioning">UX/UI Designer</a>
 
 
         <nav>
@@ -59,7 +66,7 @@
 
 
     <div class="section" id="project_hero">
-      <div class="container">
+      <div class="container_hero">
 
         <h1>Viv Platform</h1>
 
@@ -89,20 +96,20 @@
 
         <div class="row">
 
-          <div class="column col-lg-4">
+          <div class="column col-lg-5">
 
             <h1>Project <br>Overview</h1>
 
           </div>
 
-          <div class="column col-lg-8">
+          <div class="column col-lg-7">
 
             <h3>Problem</h3>
             <p>How might we help People achieve a greater balance between health, wellness, work, and life in general?</p>
 
 
             <h3>Solution</h3>
-            <p>A web platform ready to help assessing simptoms, save medical data and access physical and mental wellbeing features.</p>
+            <p>A web platform ready to help assessing symptoms, save medical data and access physical and mental wellbeing features.</p>
 
           </div>
         </div>
@@ -154,13 +161,13 @@
         <div class="row">
           <h2>The Challenge</h2>
 
-          <div class="column col-lg-4">
+          <div class="column col-lg-5">
 
-            <h1>Some Context</h1>
+            <h1>Some<br>Context</h1>
 
           </div>
 
-          <div class="column col-lg-8">
+          <div class="column col-lg-7">
 
             <p>Whether caused by the "always on" lifestyle, information overload, stress at work or life in general, people are struggling more and more to manage and deal with daily health issues. Viv was created to help these users stay on top of their health and wellness.</p>
 
@@ -177,19 +184,19 @@
 
 
 
-    <div class="section" id="Research">
+    <div class="section" id="Market_Gap">
       <div class="container">
 
         <div class="row">
           <h2>Research</h2>
 
-          <div class="column col-lg-4">
+          <div class="column col-lg-5">
 
             <h1>Market Gaps</h1>
 
           </div>
 
-          <div class="column col-lg-8">
+          <div class="column col-lg-7">
 
             <h3>Competitive Analysis</h3>
 
@@ -205,6 +212,8 @@
 
             <h3>Opportunities</h3>
 
+            <div class="card_row">
+
             <div class="card" id="questions_insights">
               <h3>📌  agregate</h3>
               <p>The possibility of combining multiple practical features in one app alone.</p>
@@ -216,6 +225,8 @@
               <p>A simple, minimal app that can be used in the most stressful of contexts. </p>
             </div>
 
+          </div>
+
 
 
           </div>
@@ -224,39 +235,40 @@
     </div>
 
 
-    <div class="section" id="dark_background">
+    <div class="section" id="Know_the_User">
       <div class="container">
 
         <div class="row">
 
-          <div class="column col-lg-4">
+          <div class="column col-lg-5">
 
             <h1>Know <br>the User</h1>
 
           </div>
 
-          <div class="column col-lg-8">
+          <div class="column col-lg-7">
 
             <h3>Interviews</h3>
 
             <p>After gaining a better perspective of the problem space, it was time to engage with potential users and identify their actual needs and goals. To that effect, a user research was conducted by means of interviews.</p>
 
-
             <h3><br>Research Goals</h3>
+            <div class="card_row">
 
             <p id="questions_insights">To understand users on a deeper level regarding their health: what their habits are, what routines, goals, obstacles.</p>
             <p id="questions_insights">Get to know users’ opinions on existing Apps and competing platforms.</p>
             <p id="questions_insights">Collect data that may validate previous assumptions.</p>
-
+</div>
 
             <h3><br>Key Findings</h3>
+            <div class="card_row">
 
             <p id="questions_insights">📌<br>Health seems to be a subject that drives a lot of the respondents’ decisions during the day.</p>
             <p id="questions_insights">📌<br>These kind of apps are somehow useful but the fact that you need one application for each kind of issue makes it all that more confusing.</p>
             <p id="questions_insights">📌<br>All of the participants struggle when trying to find a document, an exam result, or that last prescription. Lack of organization seems to be the cause of some stress.</p>
             <p id="questions_insights">📌<br>Most of participants have tried a few self-care apps to assist them with their meditation, help them sleep better, or simply track some biometric data.</p>
             <p id="questions_insights">📌<br>When it comes to scheduling appointments, they usually do it by phone and save the date on their digital calendars.</p>
-
+</div>
           </div>
         </div>
       </div>
@@ -265,18 +277,18 @@
 
 
 
-    <div class="section" id="Research">
+    <div class="section" id="Research_Analysis">
       <div class="container">
 
         <div class="row">
 
-          <div class="column col-lg-4">
+          <div class="column col-lg-5">
 
             <h1>Research Analysis</h1>
 
           </div>
 
-          <div class="column col-lg-8">
+          <div class="column col-lg-7">
 
             <p>After a reasonable amount of data was collected from the previous stages, it was time to explore, make some sense of it, and turn it into meaningful insights.</p>
 
@@ -285,17 +297,18 @@
             <p>The next move was to sort information and build clusters of related notes/ideas by creating an Affinity Map.</p>
 
 
-            <h3><br>Insights</h3>
-
-            <a href="img/projects/viv/viv_research_analysis@2x.jpg" target="_blank">
-              <img src="img/projects/viv/viv_research_analysis@1x.jpg" alt="viv research analysis">
-            </a>
-
-
-
 
           </div>
         </div>
+
+
+        <h3><br>> Insights</h3>
+
+        <a href="img/projects/viv/viv_research_analysis@2x.jpg" target="_blank">
+          <img src="img/projects/viv/viv_research_analysis@1x.jpg" alt="viv research analysis">
+        </a>
+
+
       </div>
 
       <div class="section" id="problem_statement">
@@ -309,19 +322,19 @@
 
 
 
-    <div class="section" id="conceptualization">
+    <div class="section" id="Persona_Narrative">
       <div class="container">
 
         <div class="row">
           <h2>Conceptualize</h2>
 
-          <div class="column col-lg-4">
+          <div class="column col-lg-5">
 
             <h1>Persona <br>+ Narrative</h1>
 
           </div>
 
-          <div class="column col-lg-8">
+          <div class="column col-lg-7">
 
             <p>New findings from users interviews allowed for the creation of user personas with very real needs, behaviours, pain points and goals. Once the Personas’ Frustrations, Motivations, Needs & Goals were identifyed, I could start working on journey maps and visualize the processes that users might go through to achieve their individual goals.</p>
 
@@ -353,25 +366,29 @@
 
 
 
-    <div class="section" id="dark_background">
+    <div class="section" id="wireframing_prototypig">
       <div class="container">
 
         <div class="row">
-          <h2>itions</h2>
+          <h2>Ideas & Iterations</h2>
 
 
-          <div class="column col-lg-4">
+          <div class="column col-lg-5">
 
             <h1>Wireframing Prototyping</h1>
 
           </div>
 
 
-          <div class="column col-lg-8">
+          <div class="column col-lg-7">
 
             <p>Based on the sitemap and user flows, I then started to sketch the first paper wireframes that were then grouped together making low-fidelity prototypes of what I considered to be the 3 core features of the app:</p>
 
+
             <h3><br>Core Features</h3>
+
+
+            <div class="card_row">
 
             <div class="card" id="questions_insights">
               <h3>📌  self-check assessment</h3>
@@ -387,6 +404,9 @@
               <h3>📌  upload files</h3>
               </p>
             </div>
+          </div>
+
+
 
             <h3><br>Low-Fidelity Prototype</h3>
             <a href="img/projects/viv/Viv_low-fid_prototype@2x.jpg" target="_blank">
@@ -406,21 +426,23 @@
 
 
 
-    <div class="section" id="Research">
+    <div class="section" id="usability_testing">
       <div class="container">
 
         <div class="row">
 
-          <div class="column col-lg-4">
+          <div class="column col-lg-5">
 
             <h1>Usability Testing</h1>
 
           </div>
 
-          <div class="column col-lg-8">
+          <div class="column col-lg-7">
 
             <p>The overall goal of the testing was to assess the learnability level of new users when interacting with the mobile version of the Platform for the first time. </p>
 
+
+<div class="card_row">
             <div class="card" id="questions_insights">
               <h3>* issue 1</h3>
               <p>When asked to complete a self-check, not all participants recognized “Shelf-check” links as something to assess one’s health/ symptoms.</p>
@@ -434,8 +456,10 @@
             <a href="img/projects/viv/Viv_issue_1@2x.jpg" target="_blank">
               <img src="img/projects/viv/Viv_issue_1@1x.jpg" alt="viv issue 1 image">
             </a>
+          </div>
 
 
+<div class="card_row">
               <div class="card" id="questions_insights">
                 <h3>* issue 2</h3>
                 <p>When asked to complete a self-check, not all participants recognized “Shelf-check” links as something to assess one’s health/ symptoms.</p>
@@ -449,6 +473,7 @@
               <a href="img/projects/viv/Viv_issue_2@2x.jpg" target="_blank">
                 <img src="img/projects/viv/Viv_issue_2@1x.jpg" alt="viv issue 2 image">
               </a>
+            </div>
 
 
 
@@ -459,7 +484,7 @@
 
 
 
-    <div class="section" id="dark_background">
+    <div class="section" id="Mockups">
       <div class="container">
 
         <div class="row">
@@ -495,27 +520,30 @@
 
 
 
-      <div class="section" id="light_background">
+      <div class="section" id="Interactive_Prototype">
         <div class="container">
 
           <div class="row">
 
-            <div class="column col-lg-4">
+            <div class="column col-lg-5">
               <h1>Interactive <br>Prototype</h1>
             </div>
 
-            <div class="column col-lg-8">
+            <div class="column col-lg-7">
 <div class="row">
               <iframe id="questions_insights" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="740px" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FaSQoeDmW6hhgJFhVmwJxLi%2FVIV_CF_6.5-(Copy)%3Fpage-id%3D308%253A245%26node-id%3D318%253A6388%26viewport%3D2644%252C1597%252C0.08%26scaling%3Dscale-down%26starting-point-node-id%3D318%253A6388%26show-proto-sidebar%3D1" allowfullscreen></iframe>
 </div>
             </div>
             </div>
+
+            <div class="row" id="previous_next_row">
+                <a href="speakin.html" class="button" id="previous_next">next ⟶</a>
+            </div>
+
+
           </div>
+
         </div>
-
-
-
-
 
 
   </main>

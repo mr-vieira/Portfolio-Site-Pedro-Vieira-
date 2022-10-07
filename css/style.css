@@ -1,35 +1,45 @@
 /*
 colors used:
-1 (vivid green): rgba(178, 231, 116, 1);
-2 (medium green): rgba(85, 173, 125, 1);
-3 (dry green): rgba(106, 123, 118, 1);
-4 (grey): rgba(152, 152, 153, 1);
-text color (black): rgba(49, 50, 49, 1);
-background color (light beije): rgba(253, 253, 253, 1);
+1 Accent (vivid orange): rgba(252, 82, 82, 1);
+2 Text dark BLUE (dark blue): rgba(52, 64, 85, 1);
+2 Text light (medium grey): rgba(241, 241, 241, 1);
+3 light background (light grey): rgba(253, 253, 253, 1);
+4 medium background (medium grey): rgba(241, 241, 241, 1);
+5 Dark BLUE background (dark BLUE): rgba(36, 42, 56, 1)
+
+6 Blue: rgba(228, 241, 250, 1);
+
 */
 * {
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: rgba(253, 253, 253, 1);
-  color: #313231;
+  color: rgba(52, 64, 85, 1);
   font-size: 1rem;
-  font-family: 'Nunito Sans', sans-serif;
+  word-spacing: -1px;
+  font-family: 'Work Sans', sans-serif;
   font-weight: 400;
-  line-height: 140%;
+  line-height: 145%;
+  min-height: 200vh;
 }
 
 h1 {
-  font-family: 'Source Serif Pro', serif;
+  font-family: 'Work Sans', sans-serif;
   font-size: 2.4em;
-  font-weight: 600;
-  line-height: 120%;
-  margin: 0 0.5em 0.8em 0;
+  font-weight: 700;
+  line-height: 115%;
+  margin: 0 0.8em 0.4em 0;
+  letter-spacing: 0;
 }
 
 h2 {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Work Sans', sans-serif;
   font-size: 1.3em;
   font-weight: 700;
   font-variant-caps: all-small-caps;
@@ -39,15 +49,15 @@ h2 {
 }
 
 h3 {
-  font-family: 'Nunito Sans', sans-serif;
-  font-size: 1.1em;
-  font-weight: 800;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.2em;
+  font-weight: 700;
   line-height: 120%;
-  margin: 0 0 0.4em;
+  margin: 0 0 0.5em;
 }
 
 h4 {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Work Sans', sans-serif;
   font-size: 1.4em;
   font-weight: 800;
   line-height: 140%;
@@ -55,7 +65,7 @@ h4 {
 }
 
 h5 {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Work Sans', sans-serif;
   font-size: 0.9em;
   font-weight: 400;
   line-height: 140%;
@@ -69,19 +79,22 @@ p {
 }
 
 #logo {
-  font-family: 'Nunito Sans', sans-serif;
-  font-size: 1em;
-  font-weight: 900;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.1em;
+  font-weight: 700;
   text-decoration: none;
   margin: 1em 0 0;
+  color: rgba(238, 234, 234, 1);
 }
 
 #positioning {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Work Sans', sans-serif;
   font-size: 0.8em;
   line-height: 0.3em;
   text-decoration: none;
   margin: 0;
+  color: white;
+  font-weight: 400;
 }
 
 #myNavtoggle ul {
@@ -93,18 +106,18 @@ p {
 }
 
 #work h2 {
-  margin: 1.5em 0 0;
-  color: rgba(49, 50, 49, 1);
-  font-size: 1.4em;
+  margin: 0 0 2em;
+  color: rgba(52, 64, 85, 1);
+  font-size: 1.2em;
 }
 
 #work h3 {
-  margin: 0 0 0.6em;
-  font-size: 1.7em;
+  margin: -5px 0 0.4em;
+  font-size: 2.2em;
 }
 
 #work .row p {
-  margin: 0 0 1em;
+  margin: 0 0 1.2em;
 }
 
 .hero h1 span {
@@ -115,7 +128,7 @@ p {
 img {
   width: 100%;
   margin: 0;
-  border-radius: 2px;
+  border-radius: 0;
 }
 
 div#picture_hero {
@@ -128,7 +141,7 @@ div#picture_hero {
 
 #work img {
   margin: 0 0 1.5em;
-  border-radius: 5px;
+  border-radius: 0;
 }
 
 .row img {
@@ -142,7 +155,7 @@ div#picture_hero {
 /* unvisited link */
 a {
   color: rgba(49, 50, 49, 1);
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 /* visited link */
@@ -156,7 +169,7 @@ a:hover,
 a:focus {
   text-decoration: none;
   color: rgba(49, 50, 49, 1);
-  background: none;
+  background: underline;
 }
 
 /* selected link */
@@ -169,7 +182,7 @@ a:active {
 a.button {
   display: inline-block;
   text-decoration: none;
-  background-color: rgba(49, 50, 49, 1);
+  background-color: rgba(57, 69, 91, 1);
   color: white;
   font-size: 1em;
   font-weight: 600;
@@ -201,36 +214,29 @@ a.button {
 }
 
 .button.contact {
-  background-color: transparent;
-  color: rgba(252, 82, 82, 1);
+  background-color: rgb(252 82 82);
+  color: rgb(255 255 255);
   font-size: 1.2em;
   text-transform: uppercase;
-  border: 2px solid rgba(252, 82, 82, 1);
-  margin: 2em 0 3.6em;
-  padding: 18px 28px;
+  margin: 2em 0 5em;
+  padding: 14px 28px;
 }
 
-.button.contact:visited {
-  background-color: transparent;
-  color: rgba(85, 173, 125, 1);
+.button.contact:active {
+  background-color: rgba(228, 241, 250, 1);
+  color: rgb(255 255 255);
   text-decoration: none;
 }
 
 .button.contact:hover,
 .button.contact:focus {
-  background-color: rgba(252, 82, 82, 0.3);
-  color: rgba(252, 82, 82, 1);
-}
-
-.button.contact:active {
-  background-color: none;
-  color: rgba(85, 173, 125, 1);
-  text-decoration: none;
+  background-color: rgba(252, 82, 82, 1);
+  color: rgba(36, 41, 56, 1);
 }
 
 /* blockquotes */
 blockquote {
-  font-family: 'Source Serif Pro', serif;
+  font-family: 'Work Sans', sans-serif;
   font-size: 1.6em;
   font-weight: 500;
   line-height: 140%;
@@ -264,28 +270,24 @@ blockquote {
   font-size: 16px;
 }
 
-#dark_background {
-  background: rgba(244, 244, 244, 1);
-}
-
-#light_background {
-  background: rgba(253, 253, 253, 1);
-}
-
 #Some_Context {
-  background: rgba(244, 244, 244, 1);
+  background: rgba(241, 241, 241, 1);
 }
 
-#Research {
+#Market_Gap {
   background: rgba(253, 253, 253, 1);
 }
 
-#Competitive_analysis {
-  background: rgba(244, 244, 244, 1);
+#Know_the_User {
+  background: rgba(241, 241, 241, 1);
 }
 
-#user_stories {
-  background: rgba(244, 244, 244, 1);
+#Research_Analysis {
+  background: rgba(253, 253, 253, 1);
+}
+
+#Persona_Narrative {
+  background: rgba(241, 241, 241, 1);
 }
 
 #Ideation {
@@ -297,16 +299,24 @@ blockquote {
 }
 
 #usability_testing {
-  background: rgba(244, 244, 244, 1);
+  background: rgba(241, 241, 241, 1);
 }
 
 #final_thoughts {
-  background: rgba(244, 244, 244, 1);
+  background: rgba(241, 241, 241, 1);
+}
+
+#Mockups {
+  background: rgba(253, 253, 253, 1);
+}
+
+#Interactive_Prototype {
+  background: rgba(241, 241, 241, 1);
 }
 
 /* Layout styling */
 
-#project_steps {
+#role {
   background: rgba(253, 253, 253, 1);
 }
 
@@ -335,35 +345,37 @@ blockquote {
 }
 
 #problem_statement {
-  background-color: rgba(228, 241, 250, 1);
-  font-family: "Source Serif Pro", serif;
-  font-weight: 600;
-  font-size: 1.6em;
-  padding: 2.8em 40px;
+  background-color: rgba(33, 40, 54, 1);
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  font-size: 1.2em;
+  padding: 7em 40px;
   text-align: center;
 }
 
 #problem_statement p {
-  line-height: 130%;
+  color: rgba(238, 234, 234, 1);
+  line-height: 145%;
   margin: 1em 0;
+  font-style: italic;
 }
 
 #problem_statement h2 {
-  color: rgba(49, 50, 49, 1);
+  color: rgba(238, 234, 234, 1);
   font-size: 21.6px;
   margin: 0;
 }
 
 #questions_insights {
   background-color: white;
-  font-family: "Source Serif Pro", serif;
+  font-family: "Work Sans", sans-serif;
   font-weight: 500;
   font-size: 1em;
   line-height: 145%;
-  padding: 1.8em;
-  margin: 1em 0;
+  padding: 2.1em 2.8em 2.8em;
+  margin: 1em 0 1.6em;
   box-shadow: 0 3px 5px 0 rgba(183, 211, 231, 0.6);
-  border-radius: 10px;
+  border-radius: 14px;
   text-align: left;
 }
 
@@ -388,23 +400,14 @@ blockquote {
 }
 
 header {
-  background-color: rgba(246, 246, 246, 1);
+  background-color: rgba(33, 40, 54, 1);
   text-align: left;
-  padding: 36px 0 27px;
+  padding: 28px 0 42px;
   position: fixed;
   width: 100%;
   box-shadow: 0 4px 10px 0 transparent;
-  animation-name: headercolor;
-  animation-duration: 20s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
-
-@keyframes headercolor {
-  0% { background-color: rgba(246, 246, 246, 1); }
-  25% { background-color: rgba(232, 249, 242, 1); }
-  50% { background-color: rgba(228, 241, 250, 1); }
-  75% { background-color: rgba(253, 246, 233, 1); }
+  line-height: 1.2em;
+  transition: top 1.3s; /* Transition effect when sliding down (and up) */
 }
 
 .navtoggle,
@@ -415,7 +418,7 @@ header {
 .navtoggle li .icon {
   position: absolute;
   right: 0;
-  top: -2px;
+  top: 1px;
   font-size: 1.6em;
   padding-right: 0.3em;
 }
@@ -432,7 +435,7 @@ header a:focus {
 
 /* Navigation Bar Styling */
 header .container {
-  padding: 0 30px 0 40px;
+  padding: 0 30px;
 }
 
 .navtoggle li:not(:last-child) {
@@ -460,48 +463,48 @@ header .container {
 
 nav > ul {
   list-style-type: none;
-  margin: 0 0 2px;
+  margin: -1.2em 0 0;
 }
 
 nav > ul > li > a {
-  padding: 0 0 0 15px;
+  padding: 0 0 0 36px;
   text-transform: sentence-case;
   font-size: 1.1em;
-  font-weight: 600;
-  color: rgba(49, 50, 49, 1);
+  font-weight: 500;
+  color: rgba(238, 234, 234, 1);
   text-decoration: none;
 }
 
 nav > ul > li > a:visited {
-  color: rgba(49, 50, 49, 1);
+  color: rgba(238, 234, 234, 1);
   text-decoration: none;
 }
 
 nav > ul > li > a:hover,
 nav > ul > li > a:focus {
-  color: rgba(49, 50, 49, 1);
+  color: rgba(238, 234, 234, 1);
   text-decoration-line: underline;
   text-decoration-style: solid;
-  text-decoration-color: rgba(252, 82, 82, 1);
-  text-decoration-thickness: 0.3em;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 8px;
 }
 
 nav > ul > li > a:active {
-  color: rgba(49, 50, 49, 1);
+  color: rgba(252, 82, 82, 1);
   text-decoration-line: underline;
 }
 
 /* Main Section */
 main {
-  padding-top: 88.4px;
+  padding-top: 0;
 }
 
 /* Hero Section Styling */
 #hero {
-  background-color: rgba(246, 246, 246, 1);
+  background-color: rgba(33, 40, 54, 1);
   display: inline-block;
   width: 100%;
-  padding: 7em 0 6em;
+  padding: 9em 0 8em;
 }
 
 #hero .container {
@@ -510,49 +513,46 @@ main {
 
 #hero h1 {
   text-align: left;
-  font-size: 2.3em;
-}
-
-#hero {
-  animation-name: herocolor;
-  animation-duration: 20s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
-
-@keyframes herocolor {
-  0% { background-color: rgba(246, 246, 246, 1); }
-  25% { background-color: rgba(232, 249, 242, 1); }
-  50% { background-color: rgba(228, 241, 250, 1); }
-  75% { background-color: rgba(253, 246, 233, 1); }
+  font-size: 2.4em;
+  color: rgba(238, 234, 234, 1);
 }
 
 #project_hero {
-  background: rgba(49, 50, 49, 1);
+  background: rgba(33, 40, 54, 1);
   color: white;
+  padding: 9em 40px 5.4em;
+}
+
+.container_hero {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0;
 }
 
 #project_hero h1 {
   text-align: center;
-  font-size: 3.5em;
+  font-size: 2em;
   font-weight: 700;
   line-height: 115%;
-  margin: 0.4em 0 0.3em;
+  margin: 0.4em 0 0.5em;
 }
 
 #project_hero p {
   text-align: center;
   font-size: 1.2em;
-  line-height: 140%;
-  margin: 0 0 1.5em;
+  margin: 0;
+}
+
+.card_row {
+  padding: 0.1em 0 2em;
 }
 
 .card h3 {
-  font-size: 1em;
+  font-size: 1.4em;
   font-variant: small-caps;
-  font-weight: 800;
-  color: rgba(49, 50, 49, 1);
+  font-weight: 700;
+  color: rgba(57, 69, 91, 1);
   margin: 0.3em 0 0.5em;
 }
 
@@ -571,11 +571,11 @@ main {
 }
 
 #work .row {
-  padding: 3em 0 1em;
+  padding: 3em 0;
 }
 
-#work .row:nth-child(odd) {
-  background: none;
+#work .row:nth-child(even) {
+  background:;
 }
 
 .project_role {
@@ -588,7 +588,7 @@ main {
 /* About me page */
 
 main .column ul {
-  margin: 0;
+  margin: 0 1em 5em 0;
   padding-inline-start: 18px;
 }
 
@@ -604,30 +604,33 @@ main .column li {
   margin: 0 0 1em;
 }
 
+#about .row {
+  margin: 4em 0 0;
+}
+
 /* Projects' page */
 .row {
   padding: 0;
 }
 
 #work .row:last-child {
-  margin-bottom: 0;
+  margin-bottom: 60px;
 }
 
 main .row li {
-  margin: 0;
+  margin: 0.6em 0;
 }
 
 /* footer section Styling */
 
 footer .container {
   max-width: 100%;
-  padding: 4em 0 0;
-  margin: 4em 0 0;
+  padding: 6em 0 0;
 }
 
 footer {
-  color: white;
-  background-color: rgba(49, 50, 49, 1);
+  color: rgba(238, 234, 234, 1);
+  background-color: rgba(33, 40, 54, 1);
   text-align: center;
 }
 
@@ -646,11 +649,11 @@ footer li {
 footer svg {
   display: inline-flex;
   width: 3em;
-  fill: rgba(49, 50, 49, 1);
+  fill: rgba(238, 234, 234, 1);
 }
 
 footer a {
-  color: rgba(49, 50, 49, 1);
+  color: rgba(238, 234, 234, 1);
 }
 
 footer a:hover svg {
@@ -660,13 +663,14 @@ footer a:hover svg {
 footer a:hover,
 footer a:focus {
   background-color: transparent;
+  color: rgba(252, 82, 82, 1);
 }
 
 footer h1 {
-  color: white;
-  font-family: 'Source Serif Pro', serif;
+  color: rgba(238, 234, 234, 1);
+  font-family: 'Work Sans', sans-serif;
   font-weight: 700;
-  font-size: 2.5em;
+  font-size: 2em;
   font-variant: normal;
   line-height: 120%;
   margin: 0;
@@ -675,12 +679,12 @@ footer h1 {
 footer h5 {
   font-size: 1em;
   margin: 1em 0;
-  color: rgba(49, 50, 49, 1);
+  color: rgba(238, 234, 234, 1);
 }
 
 footer p {
   font-size: 1.2em;
-  margin: 0.3em 2em 0;
+  margin: 0.4em 2em 0;
   line-height: 130%;
   font-weight: 400;
 }
@@ -690,12 +694,8 @@ footer [class*="col-"] {
 }
 
 #footer_2 {
-  background-color: rgba(246, 246, 246, 1);
+  background-color: rgba(27, 33, 45, 1);
   padding: 3em 2em;
-  animation-name: footercolor;
-  animation-duration: 20s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
 }
 
 #footer_2_row {
@@ -713,11 +713,78 @@ footer [class*="col-"] {
   display: inline-block;
 }
 
-@keyframes footercolor {
-  0% { background-color: rgba(246, 246, 246, 1); }
-  25% { background-color: rgba(232, 249, 242, 1); }
-  50% { background-color: rgba(228, 241, 250, 1); }
-  75% { background-color: rgba(253, 246, 233, 1); }
+/* Graphic design styling */
+
+#design_project {
+  padding: 0 0 1em;
+}
+
+#design_project h1 {
+  font-size: 1.8em;
+  margin: 0 0 0.1em;
+}
+
+#design_project_page .container {
+  padding: 9em 30px 4em;
+}
+
+#design_project_page .row {
+  margin: 0 0 3em;
+}
+
+#design_project_page .row img {
+  line-height: 0;
+  margin: 1em 0;
+}
+
+#design_project_page h3 {
+  margin: 0 0 0.4em;
+}
+
+#design_project_page h3 {
+  margin: 0 0 0.4em;
+}
+
+dl {
+  margin: 0;
+}
+
+/* BACK TO TOP BUTTON */
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: solid 2px; /* borders */
+  outline: none; /* Remove outline */
+  background-color: rgba(33, 40, 54, 0.3); /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px 10px; /* Some padding */
+  border-radius: 50px; /* Rounded corners */
+  font-size: 1.6em; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: rgba(33, 40, 54, 1); /* Add a dark-grey background on hover */
+}
+
+/* PREVIOUS & NEXT */
+#previous_next {
+  background-color: transparent; /* Set a background color */
+  border: solid 2px rgba(33, 40, 54, 1); /* borders */
+  color: rgba(33, 40, 54, 1);
+}
+
+#previous_next:hover {
+  background-color: rgba(33, 40, 54, 1); /* Add a dark-grey background on hover */
+  color: white;
+}
+
+#previous_next_row {
+  padding: 10px 30px 10px 0;
 }
 
 /* ==============================
@@ -739,11 +806,9 @@ Medium devices (640px and larger)
   }
 
   #logo {
-    font-family: 'Nunito Sans', sans-serif;
     font-size: 1em;
     text-decoration: none;
-    margin: 0;
-    position: absolute;
+    margin: 0.1em 0 0;
   }
 
   nav {
@@ -769,7 +834,7 @@ Medium devices (640px and larger)
   }
 
   main {
-    padding: 74px 0 0;
+    padding: 0;
   }
 
   #role .row {
@@ -784,8 +849,12 @@ Medium devices (640px and larger)
     margin: 1em 0 0;
   }
 
+  #work .row {
+    padding: 4em 0 0;
+  }
+
   #work h2 {
-    margin: 2em 0 0;
+    margin: ;
   }
 
   .project_role {
@@ -803,7 +872,7 @@ Medium devices (640px and larger)
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
-    padding: 72px 30px;
+    padding: 72px 30px 92px;
   }
 
   .col-lg-8 {
@@ -835,7 +904,7 @@ Medium devices (640px and larger)
   }
 
   main .row li {
-    margin: 0;
+    margin: 0.6em 0;
   }
 
   [class*="col-"] {
@@ -843,7 +912,7 @@ Medium devices (640px and larger)
   }
 
   .column_2 {
-    padding: 0 0 0 30px;
+    padding: 0 0 0 42px;
   }
 
   .button.contact {
@@ -851,8 +920,7 @@ Medium devices (640px and larger)
   }
 
   h1 {
-    font-size: 2em;
-    font-weight: 600;
+    font-size: 2.4em;
     line-height: 110%;
   }
 
@@ -862,7 +930,7 @@ Medium devices (640px and larger)
   }
 
   h3 {
-    font-size: 1em;
+    font-size: 1.2em;
     margin: 0.4em 0 1em;
   }
 
@@ -872,7 +940,8 @@ Medium devices (640px and larger)
 
   p {
     margin: 0 0 2em;
-    line-height: 150%;
+    line-height: 145%;
+    letter-spacing: 0;
   }
 
   footer svg {
@@ -880,17 +949,30 @@ Medium devices (640px and larger)
   }
 
   #hero {
-    padding: 10em 0 9em;
+    padding: 13em 0 7em;
+  }
+
+  #project_hero {
+    background: rgba(33, 40, 54, 1);
+    color: white;
+    padding: 10em 40px 6em;
+  }
+
+  .container_hero {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.4em 0;
   }
 
   #hero h1 {
     text-align: left;
-    font-size: 2.6em;
+    font-size: 3.2em;
   }
 
   .hero h1 {
     text-align: left;
-    margin: 0;
+    margin: 0 1em 0.5em 0;
   }
 
   .hero p {
@@ -919,12 +1001,20 @@ Medium devices (640px and larger)
     padding: 0 5em 0 0;
   }
 
+  #project_hero p {
+    text-align: center;
+    margin: 0;
+    font-size: 1em;
+    line-height: 145%;
+    font-weight: 400;
+  }
+
   #project_hero h1 {
     text-align: center;
-    font-size: 3em;
+    font-size: 2.2em;
     font-weight: 700;
     line-height: 115%;
-    margin: 0.4em 0 0.3em;
+    margin: 0 0 0.6em;
   }
 
   #project_hero .column_2 {
@@ -932,10 +1022,28 @@ Medium devices (640px and larger)
   }
 
   #problem_statement p {
-    line-height: 130%;
+    line-height: 150%;
     margin: 1em 0;
     display: inline-block;
     inline-size: 540px;
+  }
+
+  #design_project {
+    padding: 0 0 4.6em;
+  }
+
+  #design_project .container {
+    padding: 92px 0 124px;
+  }
+
+  #design_project h1 {
+    font-size: 1.2em;
+    margin: 0 1em 0 0;
+  }
+
+  #design_project p {
+    margin: 0 3em 0 0;
+    line-height: 135%;
   }
 
   .row::after {
@@ -960,13 +1068,13 @@ Medium devices (640px and larger)
 
 @media only screen and (min-width: 1024px) {
   body {
-    font-size: 18px;
-    line-height: 160%;
+    font-size: px;
+    line-height: %;
   }
 
   h1 {
-    font-size: 1.9em;
-    margin: 0 2em 1em 0;
+    font-size: 2.6em;
+    margin: -0.1em 2em 1em 0;
   }
 
   h2 {
@@ -978,7 +1086,7 @@ Medium devices (640px and larger)
   }
 
   main {
-    padding: 80px 0 0;
+    padding: 0;
   }
 
   header .container {
@@ -993,17 +1101,13 @@ Medium devices (640px and larger)
     margin-right: auto;
   }
 
-  main .row li {
-    margin: 2em 0;
-  }
-
   [class*="col-"] {
     float: left;
     padding: 0;
   }
 
   .column_2 {
-    padding: 0 30px;
+    padding: 0 30px 0 52px;
   }
 
   .row::after {
@@ -1014,13 +1118,14 @@ Medium devices (640px and larger)
 
   #hero h1 {
     text-align: left;
-    font-size: 2.7em;
+    font-size: 3.5em;
     line-height: 120%;
-    margin-right: 3.5em;
+    margin: 0 2.3em 1.8em 0;
   }
 
   #problem_statement p {
-    font-size: 0.8em;
+    font-size: 1.4em;
+    font-weight: 400;
     line-height: 140%;
     margin: 1em;
     display: inline-block;
@@ -1043,7 +1148,7 @@ Medium devices (640px and larger)
     max-width: 1080px;
     margin-left: auto;
     margin-right: auto;
-    padding: 72px 30px;
+    padding: 92px 30px 124px;
   }
 
   #problem_statement p {
@@ -1056,4 +1161,299 @@ Medium devices (640px and larger)
   #footer_2_row {
     max-width: 1213px;
   }
+}
+
+/* ARROW ANIMATION */
+
+#wrapper {
+  display: table;
+  width:100%;
+  height:100%;
+}
+
+#wrapper-inner {
+  display: table-cell;
+  vertical-align:middle;
+  width:50%;
+  height:50%;
+}
+
+#scroll-down {
+    display: block;
+    position: relative;
+    padding-top: 79px;
+  text-align:center;
+}
+
+.arrow-down {
+    display: block;
+    margin: 0 auto;
+    width: 10px;
+    height: 20px;
+}
+
+.arrow-down:after {
+    content: '';
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+    behavior: url(-ms-transform.htc);
+    -moz-transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+#scroll-title {
+  display: block;
+  text-transform: uppercase;
+  color: white;
+  font-family: Work Sans;
+  font-size:14px;
+  font-weight:bold;
+  letter-spacing:.1em;
+}
+
+#scroll-down::before {
+    -webkit-animation: elasticus 1.2s cubic-bezier(1, 0, 0, 1) infinite;
+    /* Safari 4+ */
+
+    -moz-animation: elasticus 1.2s cubic-bezier(1, 0, 0, 1) infinite;
+    /* Fx 5+ */
+
+    -o-animation: elasticus 1.2s cubic-bezier(1, 0, 0, 1) infinite;
+    /* Opera 12+ */
+
+    animation: elasticus 6s cubic-bezier(1, 0, 0, 1) infinite;
+    /* IE 10+, Fx 29+ */
+
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    margin-left: -1px;
+    width: 2px;
+    height: 90px;
+    background: white;
+    content: ' ';
+}
+
+@-webkit-keyframes elasticus {
+    0% {
+        -webkit-transform-origin: 0% 0%;
+        -ms-transform-origin: 0% 0%;
+        -moz-transform-origin: 0% 0%;
+        -o-transform-origin: 0% 0%;
+        transform-origin: 0% 0%;
+        -webkit-transform: scale(1, 0);
+        -ms-transform: scale(1, 0);
+        -moz-transform: scale(1, 0);
+        -o-transform: scale(1, 0);
+        transform: scale(1, 0);
+    }
+    50% {
+        -webkit-transform-origin: 0% 0%;
+        -ms-transform-origin: 0% 0%;
+        -moz-transform-origin: 0% 0%;
+        -o-transform-origin: 0% 0%;
+        transform-origin: 0% 0%;
+        -webkit-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+        -moz-transform: scale(1, 1);
+        -o-transform: scale(1, 1);
+        transform: scale(1, 1);
+    }
+    50.1% {
+        -webkit-transform-origin: 0% 100%;
+        -ms-transform-origin: 0% 100%;
+        -moz-transform-origin: 0% 100%;
+        -o-transform-origin: 0% 100%;
+        transform-origin: 0% 100%;
+        -webkit-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+        -moz-transform: scale(1, 1);
+        -o-transform: scale(1, 1);
+        transform: scale(1, 1);
+    }
+    100% {
+        -webkit-transform-origin: 0% 100%;
+        -ms-transform-origin: 0% 100%;
+        -moz-transform-origin: 0% 100%;
+        -o-transform-origin: 0% 100%;
+        transform-origin: 0% 100%;
+        -webkit-transform: scale(1, 0);
+        -ms-transform: scale(1, 0);
+        -moz-transform: scale(1, 0);
+        -o-transform: scale(1, 0);
+        transform: scale(1, 0);
+    }
+}
+@-moz-keyframes elasticus {
+    0% {
+        -webkit-transform-origin: 0% 0%;
+        -ms-transform-origin: 0% 0%;
+        -moz-transform-origin: 0% 0%;
+        -o-transform-origin: 0% 0%;
+        transform-origin: 0% 0%;
+        -webkit-transform: scale(1, 0);
+        -ms-transform: scale(1, 0);
+        -moz-transform: scale(1, 0);
+        -o-transform: scale(1, 0);
+        transform: scale(1, 0);
+    }
+    50% {
+        -webkit-transform-origin: 0% 0%;
+        -ms-transform-origin: 0% 0%;
+        -moz-transform-origin: 0% 0%;
+        -o-transform-origin: 0% 0%;
+        transform-origin: 0% 0%;
+        -webkit-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+        -moz-transform: scale(1, 1);
+        -o-transform: scale(1, 1);
+        transform: scale(1, 1);
+    }
+    50.1% {
+        -webkit-transform-origin: 0% 100%;
+        -ms-transform-origin: 0% 100%;
+        -moz-transform-origin: 0% 100%;
+        -o-transform-origin: 0% 100%;
+        transform-origin: 0% 100%;
+        -webkit-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+        -moz-transform: scale(1, 1);
+        -o-transform: scale(1, 1);
+        transform: scale(1, 1);
+    }
+    100% {
+        -webkit-transform-origin: 0% 100%;
+        -ms-transform-origin: 0% 100%;
+        -moz-transform-origin: 0% 100%;
+        -o-transform-origin: 0% 100%;
+        transform-origin: 0% 100%;
+        -webkit-transform: scale(1, 0);
+        -ms-transform: scale(1, 0);
+        -moz-transform: scale(1, 0);
+        -o-transform: scale(1, 0);
+        transform: scale(1, 0);
+    }
+}
+@-o-keyframes elasticus {
+    0% {
+        -webkit-transform-origin: 0% 0%;
+        -ms-transform-origin: 0% 0%;
+        -moz-transform-origin: 0% 0%;
+        -o-transform-origin: 0% 0%;
+        transform-origin: 0% 0%;
+        -webkit-transform: scale(1, 0);
+        -ms-transform: scale(1, 0);
+        -moz-transform: scale(1, 0);
+        -o-transform: scale(1, 0);
+        transform: scale(1, 0);
+    }
+    50% {
+        -webkit-transform-origin: 0% 0%;
+        -ms-transform-origin: 0% 0%;
+        -moz-transform-origin: 0% 0%;
+        -o-transform-origin: 0% 0%;
+        transform-origin: 0% 0%;
+        -webkit-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+        -moz-transform: scale(1, 1);
+        -o-transform: scale(1, 1);
+        transform: scale(1, 1);
+    }
+    50.1% {
+        -webkit-transform-origin: 0% 100%;
+        -ms-transform-origin: 0% 100%;
+        -moz-transform-origin: 0% 100%;
+        -o-transform-origin: 0% 100%;
+        transform-origin: 0% 100%;
+        -webkit-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+        -moz-transform: scale(1, 1);
+        -o-transform: scale(1, 1);
+        transform: scale(1, 1);
+    }
+    100% {
+        -webkit-transform-origin: 0% 100%;
+        -ms-transform-origin: 0% 100%;
+        -moz-transform-origin: 0% 100%;
+        -o-transform-origin: 0% 100%;
+        transform-origin: 0% 100%;
+        -webkit-transform: scale(1, 0);
+        -ms-transform: scale(1, 0);
+        -moz-transform: scale(1, 0);
+        -o-transform: scale(1, 0);
+        transform: scale(1, 0);
+    }
+}
+@keyframes elasticus {
+    0% {
+        -webkit-transform-origin: 0% 0%;
+        -ms-transform-origin: 0% 0%;
+        -moz-transform-origin: 0% 0%;
+        -o-transform-origin: 0% 0%;
+        transform-origin: 0% 0%;
+        -webkit-transform: scale(1, 0);
+        -ms-transform: scale(1, 0);
+        -moz-transform: scale(1, 0);
+        -o-transform: scale(1, 0);
+        transform: scale(1, 0);
+    }
+    50% {
+        -webkit-transform-origin: 0% 0%;
+        -ms-transform-origin: 0% 0%;
+        -moz-transform-origin: 0% 0%;
+        -o-transform-origin: 0% 0%;
+        transform-origin: 0% 0%;
+        -webkit-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+        -moz-transform: scale(1, 1);
+        -o-transform: scale(1, 1);
+        transform: scale(1, 1);
+    }
+    50.1% {
+        -webkit-transform-origin: 0% 100%;
+        -ms-transform-origin: 0% 100%;
+        -moz-transform-origin: 0% 100%;
+        -o-transform-origin: 0% 100%;
+        transform-origin: 0% 100%;
+        -webkit-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+        -moz-transform: scale(1, 1);
+        -o-transform: scale(1, 1);
+        transform: scale(1, 1);
+    }
+    100% {
+        -webkit-transform-origin: 0% 100%;
+        -ms-transform-origin: 0% 100%;
+        -moz-transform-origin: 0% 100%;
+        -o-transform-origin: 0% 100%;
+        transform-origin: 0% 100%;
+        -webkit-transform: scale(1, 0);
+        -ms-transform: scale(1, 0);
+        -moz-transform: scale(1, 0);
+        -o-transform: scale(1, 0);
+        transform: scale(1, 0);
+    }
+}
+
+#scroll-title a {
+  color: rgba(238, 234, 234, 1);
+  text-decoration: none;
+}
+
+/* PROGRESS BAR */
+#scroll-progress {
+  position: fixed;
+  top: 0;
+  width: 0%;
+  height: 5px;
+  background: rgb(252, 82, 82, 1);
+  z-index: 10000;
 }

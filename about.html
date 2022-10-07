@@ -26,20 +26,31 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
 
   <!-- font styles and Fontawesome-->
-  <link <link
-    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Source+Code+Pro:wght@500;600;700&family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
-    rel="stylesheet">
-  <script src="https://kit.fontawesome.com/0f65908764.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/0f65908764.js" crossorigin="anonymous"></script>
 
 </head>
 
 <body>
 
+  <!-- PROGRESS BAR -->
+  <div id="scroll-progress"></div>
+
+
+  <!-- BACK TO TOP BUTTON -->
+  <button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
+
+
+
   <!-- For the header -->
-  <header>
+  <header id="navbar">
     <div class="container">
       <div class="navtoggle" id="myNavtoggle">
-        <a href="index.html" id="logo">Pedro Vieira</a>
+        <a href="index.html" id="logo">Pedro Vieira</a><br>
+        <a href="index.html" id="positioning">UX/UI Designer</a>
+
 
         <nav>
           <ul>
@@ -64,9 +75,9 @@
 
 
     <div class="section">
-      <div class="container">
+      <div class="container"  id="about">
 
-        <div class="row" id="about">
+        <div class="row">
 
           <div class="column col-lg-5">
 
@@ -74,7 +85,7 @@
 
             <picture>
               <source srcset="img/about/pedro-vieira profile.png" media="(max-width:767px)">
-              <img src="img/about/pedro-vieira profile.png" alt="myself">
+              <img src="img/about/pedro-vieira profile.png" alt="A picture of myself">
             </picture>
 
 
@@ -88,7 +99,7 @@
 
 <p>I Believe in using design as a force for positive change. By understanding human behaviour and the complex systems that make up the world, we can use it to generate solutions to the most defying challenges.</p>
 
-<p>Starting as a Graphic designer, I've worked with different talented teams, helping them interpret briefings, uncover insights and translate them into strong visual concepts.</p>
+<p>Starting as a Graphic designer, I've worked with different talented teams, helping them uncover insights and translate them into strong visual concepts.</p>
 
 <p>As someone who cares for the lifecycle of his shared creations, I've started to develop an ever growing interest for sustainability, and got the chance to assist teams through eco-design challenges.</p>
 
@@ -97,66 +108,61 @@
 <p>Now, combining my graphic design background with human-centered design practices, user-research, and creative problem-solving, I'm on a quest to design efficient, equitable, and sustainable digital products.</p>
 
 
+<div class="row">
+<div class="column col-lg-7">
+
+  <h2>Skills</h2>
+
+  <ul>
+  <li>User-Centered Design</li>
+  <li>Competitive Analysis</li>
+  <li>User Research</li>
+  <li>User Personas</li>
+  <li>Information Architecture</li>
+<li>User Flows</li>
+<li>Wireframing and Prototyping</li>
+<li>Usability Testing</li>
+<li>Workshop facilitation</li>
+<li>ystems and Styleguides</li>
+<li>HTML and CSS Fundamentals</li>
+</ul>
+
+
+</div>
+
+
+<div class="column col-lg-5">
+
+  <h2>Tools</h2>
+
+<ul>
+  <li>Figma</li>
+  <li>Illustrator</li>
+  <li>Photoshop</li>
+  <li>Miro</li>
+  <li>Marvel</li>
+  <li>Zeplin</li>
+</ul>
+
+</div>
+</div>
+
+
+
           </div>
         </div>
+
+
       </div>
     </div>
+
+
 
 
     <!-- about me section block 2 -->
 
 
 
-
-
-    <div class="section" id="role">
-
-      <div class="container">
-        <h2>Skills</h2>
-
-        <div class="row">
-
-          <div class="column col-lg-7">
-
-            <h3>Skills</h3>
-
-            <p>- User-Centered Design
-            <br>- Competitive Analysis
-            <br>- User Research
-            <br>- User Personas
-            <br>- Information Architecture
-            <br>- User Flows
-            <br>- Wireframing and Prototyping
-            <br>- Usability Testing
-            <br>- Workshop facilitation
-            <br>- Systems and Styleguides
-            <br>- HTML and CSS Fundamentals
-          </p>
-
-
-          </div>
-
-
-          <div class="column col-lg-5">
-
-            <h3>Tools</h3>
-
-            <p> - Figma
-            <br> - Illustrator
-            <br> - Photoshop
-            <br> - Miro
-            <br> - Marvel
-            <br> - Zeplin
-            </p>
-
-          </div>
-
-
-
-        </div>
-
-      </div>
-    </div>
 
 
 
