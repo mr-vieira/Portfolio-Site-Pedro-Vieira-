@@ -16,7 +16,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=375px, initial-scale=1">
 
-  <title>pedro vieira ux designer</title>
+  <title>pedro vieira ux/ui & graphic designer</title>
 
   <!-- normalize-->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
@@ -26,7 +26,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/0f65908764.js" crossorigin="anonymous"></script>
 
 </head>
@@ -42,15 +42,14 @@
   <header id="navbar">
     <div class="container">
       <div class="navtoggle" id="myNavtoggle">
-        <a href="index.html" id="logo">Pedro Vieira</a><br>
-        <a href="index.html" id="positioning">UX/UI Designer</a>
+        <a href="index.html" id="logo">Hi, I'm <span>PEDRO VIEIRA</span></a>
 
         <nav>
           <ul>
-            <li><a href="index.html" class="active">Work</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
-            <li><a href="files/Vieira-Pedro - UX Designer - Resume.pdf" onclick="menuToggle()" target="_blank">Resume</a></li>
+            <li><a href="index.html" class="active">WORK</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="#contact" onclick="menuToggle()">CONTACT</a></li>
+            <li><a href="files/Vieira-Pedro - UX Designer - Resume.pdf" onclick="menuToggle()" target="_blank">RESUME</a></li>
             <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
           </ul>
         </nav>
@@ -62,52 +61,81 @@
 
   <main>
 
-    <!-- For the hero section -->
-    <div class="section hero" id="hero">
-      <div class="container">
 
+
+
+<!-- TEST SECTON HERO -->
+
+
+
+<div class="section hero" id="hero">
+  <div class="container">
+    <div class="row" id="hero_row">
+
+      <div class="column_hero_0 col-md-8 col-lg-9">
         <h1>
-          Hi 🖖, <span>I’m Pedro</span>, a UX/UI Designer passionate about sustainable design.
+          UX<span>/</span>UI<br><span>& GRAPHIC</span><br>DESIGNER
         </h1>
+
+          <div class="row" id="hero_row">
+            <!-- Positioning 1 -->
+            <div class="column_hero_1 col-md-6 col-lg-5">
+              <p>Crafting functional & human Centered digital products.</p>
+            </div>
+            <!-- end column 1-->
+
+            <!-- Positioning 2 -->
+            <div class="column_hero_2 col-md-6 col-lg-5">
+              <p>Exploring Sustainability in the Digital world.</p>
+            </div>
+            <!-- end column 2-->
+          </div>
+      </div>
+
+      <div class="column_hero_3 col-md-4 col-lg-3">
+
+        <picture id="hero_picture">
+            <a class="tooltip"><span class="tooltiptext"><i class="fa-solid fa-volume-high" onclick="play()"></i></span>
+            <img src="img/hero/pedro_profile_picture@1x.jpg" alt="Pedro Vieira's profile picture" onclick="play()">
+        </picture>
+
+        <a href="#work" class="button_hero">My<br>Work<br>↓</a>
 
       </div>
 
-
-      <!-- DOWN ARROW -->
-
-      <div id="wrapper">
-  <div id="wrapper-inner">
-<div id="scroll-down">
-  <span class="arrow-down">
-
-  <!-- css generated icon -->
-  </span>
-  <span id="scroll-title">
-    <a href="#work" onclick="menuToggle()">My Work</a>
-  </span>
-</div>
-  </div>
-  </div>
-
-
+          <audio id="audio" src="files/Audio/Pedro_Vieira_introduction.mp3"></audio>
 
     </div>
+
+    <div class="column_hero_4 col-lg-3">
+      <picture id="hero_picture">
+        <a class="tooltip"><span class="tooltiptext"><i class="fa-solid fa-volume-high" onclick="play()"></i></span>
+        <img src="img/hero/pedro_profile_picture@1x.jpg" alt="Pedro Vieira's profile picture" onclick="play()">
+      </picture>
+
+      <a href="#work" class="button_hero">My<br>Work<br>↓</a>
+    </div>
+
+  </div>
+</div>
+
+
+
+<!-- END TEST SECTON HERO -->
+
+
+
+
 
     <!-- For the projects -->
     <div class="section" id="work">
 
-
       <div class="row" id="viv_project">
-
-        <div class="container">
-          <h2>UX/UI Projects</h2>
-        </div>
-
 
         <div class="container">
           <!-- open row that holds (2) columns for project -->
 
-          <div class="column_1 col-md-6 col-lg-7">
+          <div class="column_1 col-md-7 col-lg-7">
             <!-- open first column (used for image) -->
 
             <picture>
@@ -116,23 +144,23 @@
             </picture>
           </div><!-- end first column (used for image) -->
 
-          <div class="column_3 col-md-6 col-lg-5">
+          <div class="column_3 col-md-5 col-lg-5">
             <!-- open second column (used for text) -->
 
-            <h3>Viv Platform</h3>
+            <h3>VIV WEB APP</h3>
 
             <p>
-              A health and wellbeing web app designed to be a go-to tool when it
-              comes to manage people’s daily health issues.
+              The go-to web app to manage everyday health.
             </p>
 
             <p class="project_role">
               UX / UI / RESEARCH / BRANDING
             </p>
 
-            <a href="viv.html" class="button">view case study  ⟶</a>
+            <a href="viv.html" class="button">view case study</a>
 
           </div><!-- end second column -->
+
         </div>
 
       </div><!-- end row that holds (2) columns for project -->
@@ -141,10 +169,10 @@
 <!-- SPEAKIN PROJECT -->
 
       <div class="row" id="speakin'_project">
-        <div class="container">
+        <div class="container" id="left_aligned">
           <!-- open row that holds (2) columns for project -->
 
-          <div class="column_1 col-md-6 col-lg-7">
+          <div class="column_1 col-md-7 col-lg-7">
             <!-- open first column (used for image) -->
 
             <picture>
@@ -154,10 +182,10 @@
 
           </div><!-- end first column (used for image) -->
 
-          <div class="column_3 col-md-6 col-lg-5">
+          <div class="column_3 col-md-5 col-lg-5" id="project_left">
             <!-- open second column (used for text) -->
 
-            <h3>Speakin'</h3>
+            <h3>SPEAKN' APP</h3>
 
             <p>
               A mobile app capable of empowering people to learn a new language.
@@ -167,32 +195,67 @@
               UX / RESEARCH
             </p>
 
-            <a href="speakin.html" class="button">view case study  ⟶</a>
+            <a href="speakin.html" class="button">view case study</a>
           </div><!-- end second column -->
         </div>
       </div><!-- end row that holds (2) columns for project -->
+
+
+      <!-- Daily Ui Challenges -->
+
+            <div class="row" id="Daily_UI">
+              <div class="container">
+                <!-- open row that holds (2) columns for project -->
+
+                <div class="column_1 col-md-7 col-lg-7">
+                  <!-- open first column (used for image) -->
+
+                  <picture>
+                    <source srcset="img/projects/Daily UI/01_sign_up_page@2x.jpg" media="(max-width:767px)">
+                    <img src="img/projects/Daily UI/01_sign_up_page@2x.jpg" alt="Daily UI design Sample">
+                  </picture>
+
+                </div><!-- end first column (used for image) -->
+
+                <div class="column_3 col-md-5 col-lg-5" id="project_righ">
+                  <!-- open second column (used for text) -->
+
+                  <h3>DAILY UI</h3>
+
+                  <p>
+                    A daily practice to improve my UI design skills.
+                  </p>
+
+                  <p class="project_role">
+                    UI DESIGN
+                  </p>
+
+                  <a href="Daily UI Challenges.html" class="button">view projects</a>
+                </div><!-- end second column -->
+              </div>
+            </div><!-- end row that holds (2) columns for project -->
 
 
 
       <!-- COMING SOON PROJECT -->
 
             <div class="row" id="Comming Soon">
-              <div class="container">
+              <div class="container" id="left_aligned">
                 <!-- open row that holds (2) columns for project -->
 
-                <div class="column_1 col-md-6 col-lg-7">
+                <div class="column_1 col-md-7 col-lg-7">
                   <!-- open first column (used for image) -->
 
                   <picture>
                     <source srcset="img/work/Energy&water_project@1x.jpg" media="(max-width:767px)">
-                    <img src="img/work/Energy&water_project@2x.jpg" alt="Viv Project Image">
+                    <img src="img/work/Energy&water_project@2x.jpg" alt="Picture of a bulb and water as background - Energy & water project picture">
                   </picture>
                 </div><!-- end first column (used for image) -->
 
-                <div class="column_3 col-md-6 col-lg-5">
+                <div class="column_3 col-md-5 col-lg-5">
                   <!-- open second column (used for text) -->
 
-                  <h3>Energy & Water Management Dashboard</h3>
+                  <h3>ENERGY & WATER-SAVING APP</h3>
 
                   <p>
                     Working on a new digital tool to help households monitor and reduce their energy and water consumption.
@@ -218,80 +281,76 @@
             <div class="row" id="Graphic_Design_Showcase">
 
               <div class="container">
-                <h2>Graphic Design Projects</h2>
-              </div>
-
-              <div class="container">
                 <!-- open row that holds (2) columns for project -->
 
-                <div class="column_1 col-md-5 col-lg-7">
+                <div class="column_1 col-md-7 col-lg-7">
                   <!-- open first column (used for image) -->
 
                   <picture>
                     <source srcset="img/work/GD_Paladin_Logo@1x.jpg" media="(max-width:767px)">
-                    <img class="mySlides" src="img/work/GD_Paladin_Logo@2x.jpg" alt="Speakin' Project Image">
+                    <img class="mySlides" src="img/work/GD_Paladin_Logo@2x.jpg" alt="a slideshow of some graphic design work, mostly logos and packaging">
                   </picture>
 
                   <picture>
                     <source srcset="img/work/GD_Paladin_Vinegar@1x.jpg" media="(max-width:767px)">
-                    <img class="mySlides" src="img/work/GD_Paladin_Vinegar@2x.jpg" alt="Speakin' Project Image">
+                    <img class="mySlides" src="img/work/GD_Paladin_Vinegar@2x.jpg" alt="a slideshow of some graphic design work, mostly logos and packaging">
                   </picture>
 
                   <picture>
                     <source srcset="img/work/GD_Quinta_Rainha@1x.jpg" media="(max-width:767px)">
-                    <img class="mySlides" src="img/work/GD_Quinta_Rainha@2x.jpg" alt="Speakin' Project Image">
+                    <img class="mySlides" src="img/work/GD_Quinta_Rainha@2x.jpg" alt="a slideshow of some graphic design work, mostly logos and packaging">
                   </picture>
 
                   <picture>
                     <source srcset="img/work/GD_Hortas_Rainha@1x.jpg" media="(max-width:767px)">
-                    <img class="mySlides" src="img/work/GD_Hortas_Rainha@2x.jpg" alt="Speakin' Project Image">
+                    <img class="mySlides" src="img/work/GD_Hortas_Rainha@2x.jpg" alt="a slideshow of some graphic design work, mostly logos and packaging">
                   </picture>
 
                   <picture>
                     <source srcset="img/work/GD_Olga_Matias_Bussiness_cards@1x.jpg" media="(max-width:767px)">
-                    <img class="mySlides" src="img/work/GD_Olga_Matias_Bussiness_cards@2x.jpg" alt="Speakin' Project Image">
+                    <img class="mySlides" src="img/work/GD_Olga_Matias_Bussiness_cards@2x.jpg" alt="a slideshow of some graphic design work, mostly logos and packaging">
                   </picture>
 
                   <picture>
                     <source srcset="img/work/GD_Olga_Matias_Bag@1x.jpg" media="(max-width:767px)">
-                    <img class="mySlides" src="img/work/GD_Olga_Matias_Bag@2x.jpg" alt="Speakin' Project Image">
+                    <img class="mySlides" src="img/work/GD_Olga_Matias_Bag@2x.jpg" alt="a slideshow of some graphic design work, mostly logos and packaging">
                   </picture>
 
                   <picture>
                     <source srcset="img/work/GD_Casca_Rija_Almond_butter@1x.jpg" media="(max-width:767px)">
-                    <img class="mySlides" src="img/work/GD_Casca_Rija_Almond_butter@2x.jpg" alt="Speakin' Project Image">
+                    <img class="mySlides" src="img/work/GD_Casca_Rija_Almond_butter@2x.jpg" alt="a slideshow of some graphic design work, mostly logos and packaging">
                   </picture>
 
                   <picture>
                     <source srcset="img/work/GD_Casca_Rija_Brunch@1x.jpg" media="(max-width:767px)">
-                    <img class="mySlides" src="img/work/GD_Casca_Rija_Brunch@2x.jpg" alt="Speakin' Project Image">
+                    <img class="mySlides" src="img/work/GD_Casca_Rija_Brunch@2x.jpg" alt="a slideshow of some graphic design work, mostly logos and packaging">
                   </picture>
 
                   <picture>
                     <source srcset="img/work/GD_Mendes_Goncalves_Brochure@1x.jpg" media="(max-width:767px)">
-                    <img class="mySlides" src="img/work/GD_Mendes_Goncalves_Brochure@2x.jpg" alt="Speakin' Project Image">
+                    <img class="mySlides" src="img/work/GD_Mendes_Goncalves_Brochure@2x.jpg" alt="a slideshow of some graphic design work, mostly logos and packaging">
                   </picture>
 
                   <picture>
                     <source srcset="img/work/GD_Mendes_Goncalves_Pins@1x.jpg" media="(max-width:767px)">
-                    <img class="mySlides" src="img/work/GD_Mendes_Goncalves_Pins@2x.jpg" alt="Speakin' Project Image">
+                    <img class="mySlides" src="img/work/GD_Mendes_Goncalves_Pins@2x.jpg" alt="a slideshow of some graphic design work, mostly logos and packaging">
                   </picture>
 
                 </div><!-- end first column (used for image) -->
 
 
-                <div class="column_3 col-md-7 col-lg-5">
+                <div class="column_3 col-md-5 col-lg-5">
                   <!-- open second column (used for text) -->
 
-                  <h3>Graphic Design<br>Selected work</h3>
+                  <h3>GRAPHIC DESIGN</h3>
 
-                  <p> A curated selection of both solo and collaborative graphic design projects.</p>
+                  <p> A selection of both solo and collaborative graphic design projects.</p>
 
                   <p class="project_role">
                     VISUAL ID / PACKAGING / BRAND ASSETS
                   </p>
 
-                  <a href="graphic design showcase.html" class="button">view projects  ⟶</a>
+                  <a href="graphic design showcase.html" class="button">view projects</a>
                 </div><!-- end second column -->
               </div>
             </div><!-- end row that holds (2) columns for project -->
@@ -304,22 +363,24 @@
   <!-- For the footer -->
   <footer id="contact">
     <div class="container">
-      <h1>Get in Touch</h1>
-      <p>If you like my work and want to collaborate, just get in touch 🖖 </p>
+      <h1>GET IN TOUCH</h1>
+      <p>If you like my work and whish to collaborate, just drop me a line 🖖 </p>
+    </div>
 
       <div class="row">
         <a href="mailto:hey@pedrovieira.design" class="button contact">Email me</a>
       </div>
 
+
       <!--Social Media Layout and Placeholders-->
       <div class="section" id="footer_2">
         <div class="row" id="footer_2_row">
 
-    <div class="column col-lg-4">
+    <div class="column col-md-4 col-lg-4">
     <a href="mailto:hey@pedrovieira.design" id="mail">hey@pedrovieira.design</a>
   </div>
 
-    <div class="column col-lg-4">
+    <div class="column col-md-4 col-lg-4">
     <ul>
 
       <li>
@@ -356,9 +417,10 @@
   </div>
 
 
-  <div class="column col-lg-4">
-    <h5>Copyright Pedro Vieira © 2022</h5>
+  <div class="column col-md-4 col-lg-4">
+    <h5>Copyright Pedro Vieira © 2023</h5>
   </div>
+
 
 </div>
 </div>

@@ -4,7 +4,7 @@ console.log('Hi! Welcome to My UX Portfolio Site')
 
 function menuToggle () {
   var x = document.getElementById('myNavtoggle')
-  if (x.className === 'navtoggle' && $(window).width() < 640) {
+  if (x.className === 'navtoggle' && $(window).width() < 764) {
     x.className += ' responsive'
   } else {
     x.className = 'navtoggle'
@@ -67,4 +67,10 @@ function carousel() {
   if (slideIndex > x.length) {slideIndex = 1}
   x[slideIndex-1].style.display = "block";
   setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+
+
+function play() {
+  var audio = document.getElementById("audio");
+  audio.play();
 }

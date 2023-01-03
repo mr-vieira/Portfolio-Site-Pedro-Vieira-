@@ -26,9 +26,11 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
 
   <!-- font styles and Fontawesome-->
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"><script src="https://kit.fontawesome.com/0f65908764.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/0f65908764.js" crossorigin="anonymous"></script>
 
 </head>
 
@@ -41,20 +43,17 @@
   <button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
 
 
-  <!-- For the header -->
   <header id="navbar">
     <div class="container">
       <div class="navtoggle" id="myNavtoggle">
-        <a href="index.html" id="logo">Pedro Vieira</a><br>
-        <a href="index.html" id="positioning">UX/UI Designer</a>
-
+        <a href="index.html" id="logo">Hi, I'm <span>PEDRO VIEIRA</span></a>
 
         <nav>
           <ul>
-            <li><a href="index.html" class="active">Work</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
-            <li><a href="files/Vieira-Pedro - UX Designer - Resume.pdf" onclick="menuToggle()" target="_blank">Resume</a></li>
+            <li><a href="index.html" class="active">WORK</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="#contact" onclick="menuToggle()">CONTACT</a></li>
+            <li><a href="files/Vieira-Pedro - UX Designer - Resume.pdf" onclick="menuToggle()" target="_blank">RESUME</a></li>
             <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
           </ul>
         </nav>
@@ -73,8 +72,17 @@
         <h1>Speakin'</h1>
 
         <p>
-          A mobile app capable of empowering people to learn a new language.
+          A mobile app that empowers people to learn a new language.
         </p>
+
+        <p class="column col-md-6 col-lg-6">
+          <strong>Role:</strong> UX Design
+        </p>
+
+        <p class="column col-md-6 col-lg-6">
+          <strong>Student Project</strong>
+        </p>
+
 
       </div>
     </div>
@@ -84,7 +92,7 @@
 
       <picture>
         <source srcset="img/projects/speakin'/speakin_project_hero@1x.jpg" media="(max-width:767px)">
-        <img src="img/projects/speakin'/speakin_project_hero@2x.jpg" alt="Speakin Project Image">
+        <img src="img/projects/speakin'/speakin_project_hero@2x.jpg" alt="Speakin Project Image - paper wireframes">
       </picture>
 
     </div>
@@ -98,20 +106,29 @@
 
         <div class="row">
 
-          <div class="column col-lg-5">
+          <div class="column col-md-5 col-lg-5">
 
-            <h1>Project Overview</h1>
+            <h1>Project <br>Overview</h1>
 
           </div>
 
-          <div class="column col-lg-7">
+          <div class="column col-md-7 col-lg-7">
+            <div class="column_2">
+              <h3>Problem</h3>
+              <p>Language students need new and effective ways of learning and utilising new words and concepts.</p>
+            </div>
 
-            <h3>Problem</h3>
-            <p>Language students need new and effective ways of learning and utilising new words and concepts.</p>
+            <div class="column_2">
+              <h3>Solution</h3>
+              <p>A mobile app that empowers people to learn new languages by:</p>
+            </div>
 
-
-            <h3>Solution</h3>
-            <p>A mobile app that empowers people to learn new languages.</p>
+            <div class="column_2">
+              <ul>
+                <li>Providing different levels of customization.</li>
+                <li>Encouraging and supporting users every step of their learning journeys</li>
+              </ul>
+            </div>
 
           </div>
         </div>
@@ -170,16 +187,19 @@
           </div>
 
           <div class="column col-lg-7">
+            <div class="column_2">
+              <p>No matter the age, motivations or walks of life, people are always seeking knowledge and trying to learn new disciplines. But if learning and memorizing dozens, perhaps hundreds of new terms and concepts seems daunting, one can think
+                of how overwhelming it is to learn a new language. It requires time, dedication and consistency.</p>
+            </div>
 
-            <p>No matter the age, motivations or walks of life, people are always seeking knowledge and trying to learn new disciplines. But if learning and memorizing dozens, perhaps hundreds of new terms and concepts seems daunting, one can think
-              of how overwhelming it is to learn a new language. It requires time, dedication and consistency.</p>
+            <div class="column_2">
+              <h3>Questions coming to mind</h3>
 
-            <h3>Questions coming to mind</h3>
-
-            <p id="questions_insights">🤔<br>How do people go about learning new vocabulary and languages?</p>
-            <p id="questions_insights">🤔<br>What hurdles do they face?</p>
-            <p id="questions_insights">🤔<br>What motivates them?</p>
-            <p id="questions_insights">🤔<br>What makes them quit?</p>
+              <p id="questions_insights">🤔<br>How do people go about learning new vocabulary and languages?</p>
+              <p id="questions_insights">🤔<br>What hurdles do they face?</p>
+              <p id="questions_insights">🤔<br>What motivates them?</p>
+              <p id="questions_insights">🤔<br>What makes them quit?</p>
+            </div>
 
           </div>
         </div>
@@ -207,28 +227,29 @@
           </div>
 
           <div class="column col-lg-7">
+            <div class="column_2">
+              <h3>Competitive Analysis</h3>
 
-            <h3>Competitive Analysis</h3>
+              <p>To get a better understanding of the problem area, and the solutions that have already been created to address it, I conducted a competitive analysis on some of the most well-known apps in this field, namely: Babbel, Duolingo and BBC
+                Learning English.</p>
 
-            <p>To get a better understanding of the problem area, and the solutions that have already been created to address it, I conducted a competitive analysis on some of the most well-known apps in this field, namely: Babbel, Duolingo and BBC
-              Learning English.</p>
-
-            <picture>
-              <source srcset="img/projects/speakin'/speakin_project_competitive analysis logos@1x.jpg" media="(max-width:767px)">
-              <img src="img/projects/speakin'/speakin_project_competitive analysis logos@2x.jpg" alt="Competitors' logos">
-            </picture>
+              <picture>
+                <source srcset="img/projects/speakin'/speakin_project_competitive analysis logos@1x.jpg" media="(max-width:767px)">
+                <img src="img/projects/speakin'/speakin_project_competitive analysis logos@2x.jpg" alt="Competitors' logos">
+              </picture>
+            </div>
 
             <h3>Findings</h3>
 
             <div class="card" id="questions_insights">
-              <h3>📌  low customization</h3>
+              <h3>📌 low customization</h3>
               <p>Users can set daily and weekly goals, but despite being asked about their motivations to learn a new language, one can’t tell how this applies to the learning experience. <br>Can this generic approach serve all users in the same way?
               </p>
             </div>
 
 
             <div class="card" id="questions_insights">
-              <h3>📌  learning in a strict path</h3>
+              <h3>📌 learning in a strict path</h3>
               <p>Apart from BBC Learning English, the learning experience is a strict path, following a class program with no options of direct access to specific subjects.<br>Is this always the best approach? </p>
             </div>
 
@@ -252,23 +273,26 @@
           </div>
 
           <div class="column col-lg-7">
+            <div class="column_2">
+              <p>Engaging directly with users is crucial to test an assumption or hypothesis. I conducted a series of user interviews as a way of gaining insights into users’ motivations, goals and expectations. I recruited 3 participants who’ve used
+                language learning apps or engaged with some sort of language learning activity in recent months.</p>
+            </div>
 
-            <p>Engaging directly with users is crucial to test an assumption or hypothesis. I conducted a series of user interviews as a way of gaining insights into users’ motivations, goals and expectations. I recruited 3 participants who’ve used
-              language learning apps or engaged with some sort of language learning activity in recent months.</p>
+            <div class="column_2">
+              <h3>User Personas</h3>
 
-            <h3>User Personas</h3>
+              <p>From each interview, I was able to take note of participants’ behaviours, thoughts and feelings. The collected qualitative data allowed for the creation of a user persona, a way of humanizing users, keeping their goals, needs and
+                pains
+                at the centre of all design decisions.</p>
 
-            <p>From each interview, I was able to take note of participants’ behaviours, thoughts and feelings. The collected qualitative data allowed for the creation of a user persona, a way of humanizing users, keeping their goals, needs and pains
-              at the centre of all design decisions.</p>
+              <a href="img/projects/speakin'/speakin_project_user persona@2x.jpg" target="_blank">
+                <img src="img/projects/speakin'/speakin_project_user persona@1x.jpg" alt="speakin' user persona image">
+              </a>
 
-            <a href="img/projects/speakin'/speakin_project_user persona@2x.jpg" target="_blank">
-              <img src="img/projects/speakin'/speakin_project_user persona@1x.jpg" alt="speakin' user persona image">
-            </a>
-
-            <a href="img/projects/speakin'/speakin_project_user behaviours needs goals@2x.jpg" target="_blank">
-              <img src="img/projects/speakin'/speakin_project_user behaviours needs goals@1x.jpg" alt="speakin' user persona image">
-            </a>
-
+              <a href="img/projects/speakin'/speakin_project_user behaviours needs goals@2x.jpg" target="_blank">
+                <img src="img/projects/speakin'/speakin_project_user behaviours needs goals@1x.jpg" alt="speakin' user persona image">
+              </a>
+            </div>
 
             <h3>User Stories</h3>
 
@@ -323,7 +347,10 @@
 
           <div class="column col-lg-7">
 
-            <p>With a primary Persona, User Stories and a refined Problem Statement, I was now able to think of new functionalities or features aimed at solving real problems for real people.</p>
+            <div class="column_2">
+
+              <p>With a primary Persona, User Stories and a refined Problem Statement, I was now able to think of new functionalities or features aimed at solving real problems for real people.</p>
+            </div>
 
             <h3>Hypothesis</h3>
 
@@ -354,81 +381,90 @@
     </div>
 
 
-      <div class="section" id="Ideation">
-        <div class="container">
+    <div class="section" id="Ideation">
+      <div class="container">
 
-          <div class="row">
+        <div class="row">
 
-            <div class="column col-lg-5">
+          <div class="column col-lg-5">
 
-              <h1>Information Architecture</h1>
+            <h1>Information Architecture</h1>
 
+          </div>
+
+          <div class="column col-lg-7">
+
+            <div class="column_2">
+              <h3>User Flows</h3>
+              <p>After deciding on what features to build and test, it was necessary to identify the steps required to perform and complete specific tasks by documenting them in a diagram flow.</p>
             </div>
 
-            <div class="column col-lg-7">
-
-              <h3>User Flows</h3>
-
-              <p>After deciding on what features to build and test, it was necessary to identify the steps required to perform and complete specific tasks by documenting them in a diagram flow.</p>
-
+            <div class="column_2">
               <h3>✏️ Task 1 - Create a custom study plan</h3>
 
               <a href="img/projects/speakin'/speakin_project_user flow_custom study@2x.jpg" target="_blank">
                 <img src="img/projects/speakin'/speakin_project_user flow_custom study@1x.jpg" alt="speakin' user persona image">
               </a>
+            </div>
 
-
+            <div class="column_2">
               <h3>✏️ Task 2 - Take an every-day vocabulary lesson.</h3>
 
               <a href="img/projects/speakin'/speakin_project_user flow_everyday lesson@2x.jpg" target="_blank">
                 <img src="img/projects/speakin'/speakin_project_user flow_everyday lesson@1x.jpg" alt="speakin' user persona image">
               </a>
-
-
-
             </div>
+
+
           </div>
         </div>
       </div>
+    </div>
 
 
 
-      <div class="section" id="wireframing_prototypig">
-        <div class="container">
+    <div class="section" id="wireframing_prototypig">
+      <div class="container">
 
-          <div class="row">
-            <h2>Wireframes & Prototypes</h2>
+        <div class="row">
+          <h2>Wireframes & Prototypes</h2>
 
-            <div class="column col-lg-5">
+          <div class="column col-lg-5">
 
-              <h1>Pen meets <br>Paper</h1>
+            <h1>Pen meets <br>Paper</h1>
 
-            </div>
+          </div>
 
-            <div class="column col-lg-7">
+          <div class="column col-lg-7">
+            <div class="column_2">
 
               <p>Referring to the previously created User Flows, I started to sketch out the first wireframes. After some iterations, I uploaded the individual sketches and created a Low-Fidelity Prototype, with enough detail and functionality to be
                 tested with target users while they try to complete given tasks. </p>
+            </div>
 
+            <div class="column_2">
               <h3>✏️ Custom study plan</h3>
 
               <a href="img/projects/speakin'/speakin_project_wireframe study plan@2x.jpg" target="_blank">
                 <img src="img/projects/speakin'/speakin_project_wireframe study plan@1x.jpg" alt="speakin' user persona image">
               </a>
+            </div>
 
+            <div class="column_2">
               <h3>✏️ Everyday Vocabulary Lesson</h3>
 
               <a href="img/projects/speakin'/speakin_project_wireframe pronunciation@2x.jpg" target="_blank">
                 <img src="img/projects/speakin'/speakin_project_wireframe pronunciation@1x.jpg" alt="speakin' user persona image">
               </a>
-
             </div>
-
 
           </div>
 
+
         </div>
+
       </div>
+    </div>
     </div>
 
 
@@ -445,176 +481,185 @@
           </div>
 
           <div class="column col-lg-7">
-
-            <p>After recruiting 3 new participants, it was time to put the prototype to the test, and evaluate if the proposed features, Information architecture and navigation were clear and efficient.</p>
-
-            <h3>Scenario Tasks</h3>
-            <p>To evaluate a participant’s ability to complete specific tasks, I defined Scenario tasks, giving them a real-world context.</p>
-
-            <div class="card" id="questions_insights">
-              <h3>🎤</h3>
-              <p>Let’s say that one of your weak spots is pronunciation. How would you use this app to help you with that?</p>
+            <div class="column_2">
+              <p>After recruiting 3 new participants, it was time to put the prototype to the test, and evaluate if the proposed features, Information architecture and navigation were clear and efficient.</p>
             </div>
 
-            <div class="card" id="questions_insights">
-              <h3>🎤</h3>
-              <p>Starting and maintaining new habits, like learning a new idiom, can present a real challenge. Can you use the app to help you establish new habits? How?</p>
+            <div class="column_2">
+              <h3>Scenario Tasks</h3>
+              <p>To evaluate a participant’s ability to complete specific tasks, I defined Scenario tasks, giving them a real-world context.</p>
+
+              <div class="card" id="questions_insights">
+                <h3>🎤</h3>
+                <p>Let’s say that one of your weak spots is pronunciation. How would you use this app to help you with that?</p>
+              </div>
+
+              <div class="card" id="questions_insights">
+                <h3>🎤</h3>
+                <p>Starting and maintaining new habits, like learning a new idiom, can present a real challenge. Can you use the app to help you establish new habits? How?</p>
+              </div>
+
+              <a href="img/projects/speakin'/speakin_interview_screens@2x.jpg" target="_blank">
+                <img src="img/projects/speakin'/speakin_interview_screens@2x.jpg" alt="speakin' interview's screenshots">
+              </a>
+</div>
+
+              <p>As users interacted with the prototype and completed given tasks, I was able to identify friction points and discover areas for improvement.</p>
+
+
             </div>
-
-            <a href="img/projects/speakin'/speakin_interview_screens@2x.jpg" target="_blank">
-              <img src="img/projects/speakin'/speakin_interview_screens@2x.jpg" alt="speakin' interview's screenshots">
-            </a>
-
-            <p>As users interacted with the prototype and completed given tasks, I was able to identify friction points and discover areas for improvement.</p>
-
-
           </div>
         </div>
       </div>
-    </div>
 
 
-    <div class="section" id="iteration">
-      <div class="container">
+      <div class="section" id="iteration">
+        <div class="container">
 
-        <div class="row">
+          <div class="row">
 
-          <div class="column col-lg-5">
+            <div class="column col-lg-5">
 
-            <h1>Iterations</h1>
+              <h1>Iterations</h1>
 
-          </div>
-
-          <div class="column col-lg-7">
-
-            <h3>Refining the prototype</h3>
-
-            <p>I revised every issue encountered and created an updated prototype.</p>
-
-            <h3><br>Task 1 - Create a custom study plan</h3>
-
-            <div class="card" id="questions_insights">
-              <h3>* issue</h3>
-              <p>Users had trouble finding the Studying Plan configuration, tought it should be under the settings category.</p>
             </div>
 
+            <div class="column col-lg-7">
+              <div class="column_2">
 
-
-            <div class="card" id="questions_insights">
-              <h3>* proposed solution</h3>
-              <p>Remove the  << Settings>>  button from the bottom menu and place it inside the profile category, so that there’s less conflict between the two.</p>
+              <h3>Refining the prototype</h3>
+              <p>I revised every issue encountered and created an updated prototype.</p>
             </div>
 
-            <a href="img/projects/speakin'/speakin_project_wireframe study plan@2x.jpg.png" target="_blank">
-              <img src="img/projects/speakin'/speakin_project_wireframe study plan@2x.jpg.png" alt="speakin' user persona image">
-            </a>
+            <div class="column_2">
+              <h3><br>Task 1 - Create a custom study plan</h3>
 
-            <a href="img/projects/speakin'/speakin_project_wireframe study plan reviwed@2x.jpg.png" target="_blank">
-              <img src="img/projects/speakin'/speakin_project_wireframe study plan reviwed@2x.jpg.png" alt="speakin' user persona image">
-            </a>
-
-
+              <div class="card" id="questions_insights">
+                <h3>* issue</h3>
+                <p>Users had trouble finding the Studying Plan configuration, tought it should be under the settings category.</p>
+              </div>
 
 
-            <h3><br>Task 2 - Take an every-day vocabulary lesson.</h3>
 
-            <div class="card" id="questions_insights">
-              <h3>* issue</h3>
-              <p>When trying to return to home screen, the user felt that it took too long. “there should be a quicker way”.</p>
-            </div>
+              <div class="card" id="questions_insights">
+                <h3>* proposed solution</h3>
+                <p>Remove the << Settings>> button from the bottom menu and place it inside the profile category, so that there’s less conflict between the two.</p>
+              </div>
 
-            <div class="card" id="questions_insights">
-              <h3>* proposed solution</h3>
-              <p>Include bottom navigation in every page except for exercise pages.</p>
-            </div>
-
-          </div>
-        </div>
-
-        <div class="row">
-              <a href="img/projects/speakin'/speakin_project_wireframe vocabulary lesson@2x.jpg.png" target="_blank">
-                <img src="img/projects/speakin'/speakin_project_wireframe vocabulary lesson@2x.jpg.png" alt="speakin' user persona image">
+              <a href="img/projects/speakin'/speakin_project_wireframe study plan@2x.jpg.png" target="_blank">
+                <img src="img/projects/speakin'/speakin_project_wireframe study plan@2x.jpg.png" alt="speakin' user persona image">
               </a>
 
-              <a href="img/projects/speakin'/speakin_project_wireframe vocabulary lesson reviewd@2x.jpg.png" target="_blank">
-                <img src="img/projects/speakin'/speakin_project_wireframe vocabulary lesson reviewd@2x.jpg.png" alt="speakin' user persona image">
+              <a href="img/projects/speakin'/speakin_project_wireframe study plan reviwed@2x.jpg.png" target="_blank">
+                <img src="img/projects/speakin'/speakin_project_wireframe study plan reviwed@2x.jpg.png" alt="speakin' user persona image">
               </a>
-        </div>
 
+            </div>
+
+
+            <div class="column_2">
+
+              <h3><br>Task 2 - Take an every-day vocabulary lesson.</h3>
+
+              <div class="card" id="questions_insights">
+                <h3>* issue</h3>
+                <p>When trying to return to home screen, the user felt that it took too long. “there should be a quicker way”.</p>
+              </div>
+
+              <div class="card" id="questions_insights">
+                <h3>* proposed solution</h3>
+                <p>Include bottom navigation in every page except for exercise pages.</p>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="row">
+            <a href="img/projects/speakin'/speakin_project_wireframe vocabulary lesson@2x.jpg.png" target="_blank">
+              <img src="img/projects/speakin'/speakin_project_wireframe vocabulary lesson@2x.jpg.png" alt="speakin' user persona image">
+            </a>
+
+            <a href="img/projects/speakin'/speakin_project_wireframe vocabulary lesson reviewd@2x.jpg.png" target="_blank">
+              <img src="img/projects/speakin'/speakin_project_wireframe vocabulary lesson reviewd@2x.jpg.png" alt="speakin' user persona image">
+            </a>
+          </div>
+
+        </div>
       </div>
     </div>
 
 
 
-    <div class="section" id="interactive_prototype">
-      <div class="container">
+      <div class="section" id="interactive_prototype">
+        <div class="container">
 
-        <div class="row">
-          <h2>Interactive Prototype</h2>
+          <div class="row">
+            <h2>Interactive Prototype</h2>
 
-          <div class="column col-lg-5">
+            <div class="column col-lg-5">
 
-            <h1>Give it a try</h1>
+              <h1>Give it a try</h1>
 
-          </div>
+            </div>
 
-          <div class="column col-lg-7">
+            <div class="column col-lg-7">
 
-            <picture>
-              <source srcset="img/projects/speakin'/speakin (1).gif" media="(max-width:767px)">
-              <img src="img/projects/speakin'/speakin (1).gif" alt="Prototype gif">
-            </picture>
+              <picture>
+                <source srcset="img/projects/speakin'/speakin (1).gif" media="(max-width:767px)">
+                <img src="img/projects/speakin'/speakin (1).gif" alt="Prototype gif">
+              </picture>
 
-            <a href="https://marvelapp.com/prototype/f70hae1" class="button" target="_blank">Explore the latest
-              working prototype</a>
+              <a href="https://marvelapp.com/prototype/f70hae1" class="button" target="_blank">Explore the latest
+                working prototype</a>
 
-
-
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
 
 
-    <div class="section" id="conclusion">
-      <div class="container">
+      <div class="section" id="conclusion">
+        <div class="container">
 
-        <div class="row">
-          <h2>Conclusion</h2>
+          <div class="row">
+            <h2>Conclusion</h2>
 
-          <div class="column col-lg-5">
+            <div class="column col-lg-5">
 
-            <h1>Final Thoughts</h1>
+              <h1>Final Thoughts</h1>
 
+            </div>
+
+            <div class="column col-lg-7">
+
+              <h3>Key Learnings</h3>
+              <p>As a first experience with a UX design project, the learning by doing approach felt like a good starting point. Instead of expecting breakthrough ideas, I was focused instead on internalizing the methods, frameworks and mindset of a
+                UX designer.</p>
+
+
+              <h3>“Scratching my own itch?”</h3>
+              <p>As someone who’s trying to learn a second language, when I decided to create a language learning app, this brought some extra challenges, as I had to keep reminding myself that I wasn’t building something for my own needs. That being
+                said, I think it was a great opportunity to challenge my assumptions, train my listening and empathy skills, and understand the value of user research. </p>
+
+              <h3>Collaboration</h3>
+              <p>By approaching this challenge alone, I missed the the more collaborative approach to projects. From my previous work experience, bouncing ideas with others is one of the best ways of getting new perspectives on a problem and
+                potential ways of solving it.
+
+              </p>
+
+
+
+            </div>
           </div>
 
-          <div class="column col-lg-7">
-
-<h3>Key Learnings</h3>
-<p>As a first experience with a UX design project,  the learning by doing approach felt like a good starting point. Instead of expecting breakthrough ideas, I was focused instead on internalizing the methods, frameworks and mindset of a UX designer.</p>
-
-
-<h3>“Scratching my own itch?”</h3>
-<p>As someone who’s trying to learn a second language, when I decided to create a language learning app, this brought some extra challenges, as I had to keep reminding myself that I wasn’t building something for my own needs. That being said, I think it was a great opportunity to challenge my assumptions, train my listening and empathy skills, and understand the value of user research. </p>
-
-<h3>Collaboration</h3>
-<p>By approaching this challenge alone, I missed the the more collaborative approach to projects. From my previous work experience, bouncing ideas with others is one of the best ways of getting new perspectives on a problem and potential ways of solving it.
-
-</p>
-
-
-
-          </div>
-        </div>
-
-        <div class="row" id="previous_next_row">
+          <div class="row" id="previous_next_row">
             <a href="viv.html" class="button" id="previous_next">⟵ previous</a>
             <a href="Water&Energy_Dashboard.html" class="button" id="previous_next">next ⟶</a>
-        </div>
+          </div>
 
+        </div>
       </div>
-    </div>
 
 
 
@@ -683,7 +728,7 @@
 
 
           <div class="column col-lg-4">
-            <h5>Copyright Pedro Vieira © 2022</h5>
+            <h5>Copyright Pedro Vieira © 2023</h5>
           </div>
 
         </div>
